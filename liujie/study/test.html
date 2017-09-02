@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+       .relativel{
+           border: 10px solid red;
+           position:relative;
+           width: 600px;
+           height: 400px;
+       }
+
+       .absolute{
+           border: 10px solid black;
+           position: absolute;
+           top: 120px;
+           right: 0;
+           width: 300px;
+           height: 200px;
+       }
+        .relativel2{
+            border: 10px solid blue;
+            position: static;
+            top: -10px;
+            left: -10px;
+            right: 0px;
+            background-color: white;
+            width:100%;
+        }
+
+        .fixed{
+            position: fixed;
+            bottom:0;
+            right:0;
+            width: 100%;
+            background-color: green;
+        }
+
+        .box{
+            display: inline-block;
+            width: 200px;
+            height: 100px;
+        }
+        .after-box{
+            clear:left;
+        }
+
+       #parsentDiv{
+           position: absolute;
+           margin: 0;
+           padding:0;
+           bottom: 0;
+           top: 0;
+           left: 0;
+           right:0;
+       }
+       #logoDiv{
+           position: absolute;
+           height: 139px;
+           width: 100%;
+           top:20%;
+       }
+
+       #imgDiv{
+           position: absolute;
+           left:33%;
+           top: 5px;
+           bottom: 5px;
+       }
+
+        #fromDiv{
+            position: absolute;
+            height:60px;
+            top:40%;
+            left: 0;
+            right: 0;
+        }
+        #textDiv{
+
+            position: absolute;
+            height: 60%;
+            width:60%;
+            left:20%;
+            top:20%;
+            bottom: 20%;
+        }
+        #inputText{
+            border: 1px solid #b6b6b6;
+            width: 70%;
+            height: 30px;
+        }
+        #btnName{
+            border:1px solid #b6b6b6;
+            background-color: #3385ff;
+            color: white;
+            width: 20%;
+            height:35px;
+        }
+
+       #bottomDiv{
+           position: absolute;
+           bottom: 30px;
+           left: 0px;
+           right:0px;
+       }
+
+       #supportDiv{
+           position: absolute;
+           bottom: 55px;
+           left: 0;
+           right: 0;
+       }
+
+       #topDiv{
+           position: absolute;
+           top: 20px;
+           right: 20px;
+       }
+
+       .interlinkageText{
+           color: black;
+           font-weight: bold;
+       }
+
+        img{
+            width: 270px;
+            height: 129px;
+        }
+
+       input{
+            float: left;
+            height: 30px;
+        }
+        p{
+            margin: 0px;
+            padding: 0px;
+            text-align: center;
+            color: #999;
+        }
+        a{
+            padding: 10px;
+            color: #999;
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body >
+    <div id="parsentDiv">
+        <!--top-->
+        <div id="topDiv">
+            <a href="http://news.baidu.com/" title="http://news.baidu.com/" class="interlinkageText">
+                新闻
+            </a>
+            <a href="https://www.hao123.com/?tn=93037428_hao_pg" title="https://www.hao123.com/?tn=93037428_hao_pg" class="interlinkageText">
+                hao123
+            </a>
+            <a href="http://map.baidu.com/" title="http://map.baidu.com/" class="interlinkageText">
+                地图
+            </a>
+            <a href="http://v.baidu.com/" title="http://v.baidu.com/" class="interlinkageText">
+                视频
+            </a>
+            <a href="https://tieba.baidu.com/index.html" title="https://tieba.baidu.com/index.html" class="interlinkageText">
+                贴吧
+            </a>
+            <a href="http://xueshu.baidu.com/" title="http://xueshu.baidu.com/" class="interlinkageText">
+                学术
+            </a>
+            <a href="">
+                登陆
+            </a>
+            <a href="">
+                设置
+            </a>
+            <a href="">
+                更多产品
+            </a>
+        </div>
+
+        <!--logo-->
+        <div id="logoDiv" >
+            <div id="imgDiv">
+                <a href="http://www.baidu.com"><img src="logo_white_baidu.jpg" alt="百度图标"></a>
+            </div>
+        </div>
+
+        <!--input-->
+        <div id="fromDiv">
+            <div id="textDiv">
+                <input type="text" id="inputText" >
+                <input type="button" id="btnName" value="百度一下" >
+            </div>
+        </div>
+
+        <!--bottom-->
+        <div id="supportDiv" >
+            <p>
+                <a href="https://www.baidu.com/cache/sethelp/help.html" title="https://www.baidu.com/cache/sethelp/help.html">
+                    把百度设为主页
+                </a>
+                <a href="http://home.baidu.com/" title="http://home.baidu.com/">
+                    关于百度
+                </a>
+                <a href="http://ir.baidu.com/phoenix.zhtml?c=188488&p=irol-irhome" title="http://ir.baidu.com/phoenix.zhtml?c=188488&p=irol-irhome">
+                    About Baidu
+                </a>
+                <a href="http://e.baidu.com/?refer=888" title="http://e.baidu.com/?refer=888">
+                    百度推广
+                </a>
+
+
+
+            </p>
+        </div>
+
+        <!--声明-->
+        <div id="bottomDiv">
+            <P>
+                ©2017 &nbsp; Baidu
+                <a href="https://www.baidu.com/duty/" title="https://www.baidu.com/duty/">
+                    使用百度前必读
+                </a>
+                <a href="http://help.baidu.com/" title="http://help.baidu.com/">
+                    意见反馈
+                </a> 
+                京ICP证030173号
+                <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11000002000001" title="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11000002000001">
+                    京公网安备11000002000001号
+                </a>
+            </P>
+
+        </div>
+    </div>
+
+
+</body>
+</html>

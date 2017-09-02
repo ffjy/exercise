@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        a{
+            color: white;
+            text-decoration: none;
+        }
+
+        #bodyDiv{
+            position: absolute;
+            /*border: 2px solid red;*/
+            max-width: 1920px;
+            height: 2400px;
+            margin: 0;
+            padding:0;
+            bottom: 0;
+            top: 0;
+            left: 0;
+            right:0;
+        }
+
+        #topDiv{
+            border: 2px solid #b6b6b6;
+            z-index:99;
+            position: fixed;
+            margin: 0px;
+            padding: 0px;
+            height: 120px;
+            top: 0;
+            width: 100%;
+        }
+
+        #loginDiv{
+            background-color: #272727;
+            color: white;
+            position: absolute;
+            margin: 0px;
+            padding: 0px;
+            top: 0;
+            width:100%;
+            height: 33%;
+        }
+
+        #telephoneDiv{
+            position: absolute;
+            left: 20%;
+            font-size: 14px;
+            text-align: center;
+            top:33%;
+            width: 20%;
+            width: 120px;
+        }
+
+        #userLoginDiv{
+            position: absolute;
+            right:20%;
+            top:33%;
+            font-size: 11px;
+            color: white;
+        }
+
+        #catalogueDiv{
+            position: absolute;
+            margin: 0px;
+            padding: 0px;
+            bottom: 0;
+            height:67%;
+            width: 100%;
+            background-color: white;
+        }
+
+        #bookLogoDiv{
+            position: absolute;
+            margin: 0;
+            padding: 0px;
+            width: 7%;
+            height:40%;
+            left:19%;
+            top:30%;
+        }
+
+        #functionsDiv{
+            position: absolute;
+            margin: 0px;
+            padding: 0;
+            width: 50%;
+            height:50%;
+            top:40%;
+            left:33%;
+        }
+
+        #functionsDiv a{
+            padding: 10px;
+            font-size: 17px;
+            color: black;
+         }
+
+        #mainBodyDiv{
+            /*border: 2px solid black;*/
+            position: absolute;
+            padding: 0px;
+            margin: 0;
+            top:120px;
+            bottom: 0;
+            left: 20%;
+            right:19%;
+        }
+
+        #titleDiv{
+            background-image: url("lgImg.png");
+            background-size: 100% 100%;
+            position: absolute;
+            margin: 0;
+            padding:0;
+            top: 5px;
+            height: 350px;
+            width: 100%;
+        }
+
+        #summaryDiv{
+            position: absolute;
+            top: 355px;
+            margin: 0;
+            padding: 0;
+            height: 200px;
+            width:100%;
+        }
+
+        #lifeImgDiv{
+            position: absolute;
+            left:1%;
+            width: 23%;
+            height: 60%;
+            top: 50px;
+            text-align: center;
+            font-size: 15px;
+            border-right:1px solid #b6b6b6;
+        }
+
+        #flagImgDiv{
+            position: absolute;
+            width: 25%;
+            height: 60%;
+            top: 50px;
+            left: 25%;
+            border-right:1px solid #b6b6b6;
+            text-align: center;
+            font-size: 15px;
+        }
+
+        #flowerImgDiv{
+            position: absolute;
+            width: 23%;
+            top: 50px;
+            height: 60%;
+            left: 50%;
+            text-align: center;
+            border-right:1px solid #b6b6b6;
+        }
+
+        #checkeredImgDiv{
+            position: absolute;
+            width: 23%;
+            height: 65%;
+            top: 40px;
+            left: 75%;
+            text-align: center;
+        }
+
+        #summaryDiv p{
+            position: absolute;
+            margin: 0;
+            padding: 0;
+            bottom: 0px;
+            right:5px;
+            left: 5px;
+            font-size: 13px;
+            font-weight: 100;
+        }
+
+        #idquiryDiv{
+            /*border: 2px solid red;*/
+            position: absolute;
+            height: 540px;
+            width: 100%;
+            top: 555px;
+        }
+
+        #bookImgDiv{
+            position: absolute;
+            margin: 0;
+            padding: 0;
+            top:0;
+            width:100%;
+            height: 200px;
+            background-color: #ececec;
+        }
+
+        #bookImgDiv img{
+            position: absolute;
+            top: 25px;
+            left:97px;
+
+        }
+
+        #lookupDiv{
+            position: absolute;
+            margin: 0;
+            padding: 0;
+            top: 200px;
+            width:100%;
+            height: 340px;
+            text-align: center;
+            color: white;
+            background-image: url("timg.jpg");
+        }
+
+        #textDiv{
+            position: absolute;
+            text-align: center;
+            width:100%;
+            top:20%;
+        }
+
+        #selectDiv{
+            position:absolute;
+            top:60%;
+            width:100%;
+            text-align: center;
+        }
+
+        #selectDiv *{
+            width: 120px;
+            height: 30px;
+        }
+
+        #registerDiv{
+            /*border: 2px solid blue;*/
+            position: absolute;
+            margin: 0px;
+            padding: 0px;
+            height: 590px;
+            width: 100%;
+            top:1095px;
+            text-align: center;
+        }
+
+        #registerDiv p{
+            color: #999999;
+            text-align: center;
+            font-weight: 100;
+        }
+
+    </style>
+</head>
+<body >
+   <div id="bodyDiv">
+       <!--top-->
+       <div id="topDiv">
+           <div id="loginDiv">
+               <div id="telephoneDiv">
+                   <b>热线 400 400 400</b>
+               </div>
+               <div id="userLoginDiv">
+                   <a href="">登陆</a>
+                   <a href="">注册</a>
+               </div>
+           </div>
+           <div id="catalogueDiv">
+               <div id="bookLogoDiv">
+                   <img src="newWorld_logo.png" alt="logo">
+               </div>
+               <div id="functionsDiv">
+                   <a href="">首页</a>
+                   <a href="">最新活动</a>
+                   <a href="">项目介绍</a>
+                   <a href="">爱心社区</a>
+                   <a href="">关于我们</a>
+               </div>
+           </div>
+
+       </div>
+
+       <!--内容-->
+       <div id="mainBodyDiv">
+           <div id="titleDiv"></div>
+
+           <div id="summaryDiv">
+               <div id="lifeImgDiv">
+                   <img src="img1.png" alt="">
+                   <p>打造全世界观，让你更爱你 <br />的生活</p>
+               </div>
+               <div id="flagImgDiv">
+                   <img src="img2.png" alt="">
+                   <p>
+                       丰富多彩的公益活动，发挥 <br /> 新世界的主人公意识
+                   </p>
+               </div>
+               <div id="flowerImgDiv">
+                   <img src="img3.png" alt="">
+                   <p>
+                       时尚的新理念，超前的体验 <br /> 未知的生活
+                   </p>
+               </div>
+               <div id="checkeredImgDiv">
+                   <img src="img4.png" alt="">
+                   <p>
+                       完善的培养机制，培养你全 <br /> 新的世界观
+                   </p>
+               </div>
+           </div>
+
+           <div id="idquiryDiv">
+               <div id="bookImgDiv" >
+                   <img src="bookImg.png" alt="">
+               </div>
+               <div id="lookupDiv">
+                   <div id="textDiv">
+                       <h2>
+                           查找新世界活动信息
+                       </h2>
+                       <p>
+                           每个城市有不同的活动信息，请自动查询你需要了解的城市
+                       </p>
+                   </div>
+
+                   <div id="selectDiv">
+                       <select>
+                           <option value ="volvo">中国</option>
+                       </select>
+                       <select>
+                           <option value ="volvo">上海</option>
+                       </select>
+                       <select>
+                           <option value ="volvo">浦东</option>
+                       </select>
+                       <input type="button" value="搜索">
+                   </div>
+               </div>
+           </div>
+
+           <div id="registerDiv">
+               <div>
+                   <h2>成为我们的志愿者</h2>
+                   <p>
+                       新世界的大家庭需要每一个热爱生活的人的加入，如果你还年轻，有梦想，有激情，
+                       <br />
+                       那就不要犹豫，快来加入我们，成为改变所有人生活的人
+                   </p>
+               </div>
+               <div>
+                   <table>
+
+                   </table>
+               </div>
+
+           </div>
+       </div>
+   </div>
+
+</body>
+</html>
