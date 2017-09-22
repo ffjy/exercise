@@ -20,4 +20,4 @@ git push origin master
 ### 刘杰
 
 1. [新世界](./liujie/study)
-2. [小凡公学](./liujie/xfgx)
+2. [小凡公学](./liujie/xfgx/index.html)
