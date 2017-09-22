@@ -1,0 +1,104 @@
+h1 {
+    position: relative;
+    top: 120px;
+}
+
+.display {
+    display: inline-block;
+    height: 415px;
+    width: 400px;
+}
+
+.aboutUs-div {
+    position: relative;
+    text-align: center;
+}
+
+/*about*/
+.about {
+    position: relative;
+    height: 388px;
+    width: 100% !important;
+    margin-top: 81px;
+    background-color: #ffffff;
+    /*border: 3px solid red;*/
+}
+
+
+.about p {
+    position: relative;
+    font-size: 20px;
+    top: 150px;
+    line-height: 35px;
+}
+
+
+/*curriculum*/
+.curriculum {
+    position: relative;
+    height: 520px;
+    background-color: #f5f5f5;
+}
+
+
+/*teacher*/
+.teacher {
+    height: 1160px;
+    background-color: #ffffff;
+}
+
+.teacher h1 {
+}
+
+.teacher-leadin {
+    position: relative;
+    top: 120px;
+}
+
+.teacher-summary {
+    position: relative;
+    height: 410px;
+    width: 1280px;
+    top: 200px;
+    /*border: 3px solid red;*/
+}
+
+.teacher-summary >div {
+    position: absolute;
+    /*border: 3px solid black;*/
+}
+
+.teacher-background {
+    left:0;
+}
+
+.teacher-experience {
+    left: 440px;
+}
+
+.teacher-team {
+    right: 0;
+}
+
+.display h2 {
+    position: relative;
+    top: 50px;
+}
+
+.display p {
+    position: relative;
+    top: 100px;
+    line-height: 30px;
+    font-size: 20px;
+}
+
+/*school*/
+.school {
+    height: 700px;
+    background-color: #f5f5f5;
+}
+
+#posterTvGrid {
+    position: relative;
+    top: 250px;
+}
