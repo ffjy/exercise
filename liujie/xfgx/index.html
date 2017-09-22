@@ -3,17 +3,17 @@
 <head>
     <meta charset="utf-8">
     <title>小凡公学</title>
-
-    <script src="js/jquery-1.8.3.js"></script>
-    <script src="js/parallax.min.js"></script>
-    <link rel="stylesheet" href="css/main.css">
     <link href="https://cdn.bootcss.com/normalize/7.0.0/normalize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdn.bootcss.com/jquery/1.12.0/jquery.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script src="https://cdn.bootcss.com/lazysizes/4.0.0-rc3/lazysizes.min.js"></script>    
 </head>
 <body style="margin: 0">
 
     <header class="header-navigation web-width top" id="header">
         <div class="main-div main-top">
-            <img src="img/main/icon_xfgx.png" height="45" width="193"/>
+            <img class="lazyload" data-src="img/main/icon_xfgx.png" height="45" width="193"/>
             <ul>
                 <li>
                     <a class="link" href="index.html" title="Home">首页</a>
@@ -36,12 +36,12 @@
 
     <div class="web-width  web-secondView web-zIndex">
         <div class="main-div main-secondView">
-            <img src="img/main/icon_bg01.png" class="main-secondView-bg"/>
+            <img data-src="img/main/icon_bg01.png" class="lazyload main-secondView-bg"/>
 
-            <img src="img/main/icon_mouse.png"
-                 class="secondView-mouse"/>
+            <img data-src="img/main/icon_mouse.png"
+                 class="lazyload secondView-mouse"/>
 
-            <img src="img/main/icon_signUp.png" class="secondView-signUp"/>
+            <img data-src="img/main/icon_signUp.png" class="lazyload secondView-signUp"/>
 
             <button class="btn">报名咨询</button>
         </div>
@@ -76,8 +76,8 @@
                                 全封闭式的学习环境
                             </p>
 
-                            <img src="img/main/icon_line.png"
-                                 class="main-thirdView-line" />
+                            <img data-src="img/main/icon_line.png"
+                                 class="lazyload main-thirdView-line" />
 
                             <p class="secondP">
                                  我们专注全封闭式文化课培训八年 <br />
@@ -95,9 +95,9 @@
                                     住宿学习
                                 </p>
                                 </span>
-                                <img src="img/main/icon_more.png" class="imgMore"/>
+                                <img data-src="img/main/icon_more.png" class="lazyload imgMore"/>
                             </div>
-                            <img src="img/main/icon_01.png" class="introduction-small-imgC introduction-small-img"/>
+                            <img data-src="img/main/icon_01.png" class="lazyload introduction-small-imgC introduction-small-img"/>
 
                             <div class="hidden-div main-thirdView-hiddenP">
                                 <span>
@@ -145,8 +145,8 @@
                                 小凡公学给你提供强大的助力
                             </p>
 
-                            <img src="img/main/icon_line.png"
-                                 class="main-thirdView-line" />
+                            <img data-src="img/main/icon_line.png"
+                                 class="lazyload main-thirdView-line" />
 
                             <p class="secondP">
                                 在这里，我们只负责陪伴有梦想的你 <br />
@@ -163,10 +163,10 @@
                                     拿最多的分
                                 </p>
                             </span>
-                                <img src="img/main/icon_more.png" class="imgMore"/>
+                                <img data-src="img/main/icon_more.png" class="lazyload imgMore"/>
                             </div>
 
-                            <img src="img/main/icon_rocket.png" class="img-rocket introduction-small-img"/>
+                            <img data-src="img/main/icon_rocket.png" class="lazyload img-rocket introduction-small-img"/>
 
                             <div class="hidden-div main-secondView-hiddenP">
                                 <span>
@@ -213,8 +213,8 @@
                             还是与你一同奋进的同学
                         </p>
 
-                        <img src="img/main/icon_line.png"
-                             class="main-thirdView-line" />
+                        <img data-src="img/main/icon_line.png"
+                             class="lazyload main-thirdView-line" />
 
                         <p class="secondP">
                             在小凡公学，我们陪你、教你、逼你、鼓励你<br />
@@ -233,10 +233,10 @@
                                 </p>
                             </span>
 
-                                <img src="img/main/icon_more.png" class="imgMore"/>
+                                <img data-src="img/main/icon_more.png" class="lazyload imgMore"/>
                             </div>
 
-                            <img src="img/main/icon_03.png" class="img-rocket introduction-small-img"/>
+                            <img data-src="img/main/icon_03.png" class="lazyload img-rocket introduction-small-img"/>
 
                             <div class="hidden-div main-fifthView-hiddenP">
                                 <span>
@@ -285,8 +285,8 @@
                                 只要你还想就永远都来得及<br />
                             </p>
 
-                            <img src="img/main/icon_line.png"
-                                 class="main-thirdView-line" />
+                            <img data-src="img/main/icon_line.png"
+                                 class="lazyload main-thirdView-line" />
 
                             <p class="secondP">
                                 小凡公学，要给让你努力到自己都害怕的地方<br />
@@ -304,10 +304,10 @@
                                 </p>
                             </span>
 
-                                <img src="img/main/icon_more.png" class="imgMore"/>
+                                <img data-src="img/main/icon_more.png" class="lazyload imgMore"/>
                             </div>
 
-                            <img src="img/main/icon_04.png" class="img-rocket introduction-small-img"/>
+                            <img data-src="img/main/icon_04.png" class="lazyload img-rocket introduction-small-img"/>
 
                             <div class="hidden-div main-sixthView-hiddenP">
                                 <span>
@@ -349,7 +349,6 @@
             </div>
         </div>
     </div>
-
 
     <script src="js/main.js"></script>
 </body>
