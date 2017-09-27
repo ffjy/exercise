@@ -463,12 +463,12 @@ p {
 }
 
 .main-top li:hover {
-    transition: 1s;
+    /*transition: 1s;*/
     background-color: #2b2724;
 }
 
 .main-top li:hover .link{
-    transition: 1s;
+    /*transition: 1s;*/
     color: #ffd304;
 }
 
