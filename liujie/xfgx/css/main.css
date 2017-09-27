@@ -395,7 +395,7 @@ p {
 .header-navigation {
     z-index: 999;
     background-color: #ffd416;
-    /*box-shadow: 0 5px 28px rgba(0,0,0,0.25), 0 4px 10px rgba(0,0,0,0.22);*/
+    box-shadow: 0 2px 5px rgba(0,0,0,0.25);
 }
 
 .header-navigation img {
