@@ -263,7 +263,7 @@ p {
 
 .effect-bubba:hover {
     cursor: pointer;
-    transition: 0.3s;
+    transition: 1s;
 }
 
 .effect-bubba figcaption {
@@ -285,6 +285,7 @@ p {
 }
 
 .effect-bubba figcaption::before {
+    transition: 1s;
     border-top: 1px solid #201001;
     border-bottom: 1px solid #201001;
     -webkit-transform: scale(0,1);
@@ -292,6 +293,7 @@ p {
 }
 
 .effect-bubba figcaption::after {
+    transition: 1s;
     border-right: 1px solid #201001;
     border-left: 1px solid #201001;
     -webkit-transform: scale(1,0);
@@ -461,10 +463,12 @@ p {
 }
 
 .main-top li:hover {
+    transition: 1s;
     background-color: #2b2724;
 }
 
 .main-top li:hover .link{
+    transition: 1s;
     color: #ffd304;
 }
 
@@ -502,7 +506,7 @@ p {
 
 .main-secondView button:hover {
     cursor: pointer;
-    transition: 0.3s;
+    transition: .5s;
 }
 
 .main-secondView-bg {
@@ -530,7 +534,7 @@ p {
 
 .secondView-signUp:hover {
     cursor: pointer;
-    transition: 0.3s;
+    transition: 1s;
 }
 
 .btn {
@@ -1001,14 +1005,17 @@ p {
 }
 
 .curriculum-kc-shuqi:hover {
+    transition: .6s;
     background-image: url("../img/main/icon_kc1.png");
 }
 
 .curriculum-kc-shuqi:hover p {
+    transition: .6s;
     color: #ffa84a;
 }
 
 .curriculum-kc-shuqi:hover >div {
+    transition: .6s;
     background-color: #ffa84a !important;
 }
 
@@ -1024,14 +1031,17 @@ p {
 }
 
 .curriculum-kc-xuankao:hover {
+    transition: .6s;
     background-image: url("../img/main/icon_kc2.png");
 }
 
 .curriculum-kc-xuankao:hover p {
+    transition: .6s;
     color: #ff704a;
 }
 
 .curriculum-kc-xuankao:hover >div {
+    transition: .6s;
     background-color: #ff704a;
 }
 
@@ -1046,14 +1056,17 @@ p {
 }
 
 .curriculum-kc-hangjia:hover {
+    transition: .6s;
     background-image: url("../img/main/icon_kc3.png");
 }
 
 .curriculum-kc-hangjia:hover p {
+    transition: .6s;
     color: #8755e3;
 }
 
 .curriculum-kc-hangjia:hover >div {
+    transition: .6s;
     background-color: #8755e3;
 }
 
@@ -1068,22 +1081,23 @@ p {
 }
 
 .curriculum-kc-gaokao:hover {
+    transition: .6s;
     background-image: url("../img/main/icon_kc4.png");
 }
 
 .curriculum-kc-gaokao:hover p {
+    transition: .6s;
     color: #38bdf4;
 }
 
 .curriculum-kc-gaokao:hover >div {
+    transition: .6s;
     background-color: #38bdf4;
 }
 
 .curriculum-kc-gaokao p {
     left: 75px;
 }
-
-
 
 /*teacher*/
 .teacher {
@@ -1164,12 +1178,12 @@ p {
 }
 
 .teacher-display:hover {
-    transition: 0.5s;
+    transition: 1s;
     box-shadow: 0 3px 10px rgba(0,0,0,0.15), 0 3px 10px rgba(0,0,0,0.15);
 }
 
 .teacher-display:hover >.yuan {
-    transition: 0.5s;
+    transition: 1s;
     background-color: #ffd304;
 }
 
