@@ -1004,6 +1004,10 @@ p {
     background-image: url("../img/main/icon_kc1.png");
 }
 
+.curriculum-kc-shuqi:hover p {
+    color: #ffa84a;
+}
+
 .curriculum-kc-shuqi:hover >div {
     background-color: #ffa84a !important;
 }
@@ -1021,6 +1025,10 @@ p {
 
 .curriculum-kc-xuankao:hover {
     background-image: url("../img/main/icon_kc2.png");
+}
+
+.curriculum-kc-xuankao:hover p {
+    color: #ff704a;
 }
 
 .curriculum-kc-xuankao:hover >div {
@@ -1041,6 +1049,10 @@ p {
     background-image: url("../img/main/icon_kc3.png");
 }
 
+.curriculum-kc-hangjia:hover p {
+    color: #8755e3;
+}
+
 .curriculum-kc-hangjia:hover >div {
     background-color: #8755e3;
 }
@@ -1057,6 +1069,10 @@ p {
 
 .curriculum-kc-gaokao:hover {
     background-image: url("../img/main/icon_kc4.png");
+}
+
+.curriculum-kc-gaokao:hover p {
+    color: #38bdf4;
 }
 
 .curriculum-kc-gaokao:hover >div {
