@@ -26,7 +26,7 @@
 			if(parseInt(this.body.outerWidth())>1255 || navigator.userAgent.indexOf('iPad') !== -1){
 				this.options.width = 1190;	
 			}else{
-				this.options.width = 970;	
+				this.options.width = 970;
 			}
 			this.total = this.data.length;
 			this.pageNow = this.options.initPage;
@@ -42,7 +42,7 @@
 			this.parent.css({width:this.options.width+"px", height:this.options.height+"px", position: "relative"});
 			this.content = document.createElement("DIV");
 			this.content.className = this.options.className;
-			this.content.cssText = "width:"+this.options.width+"px;height:"+this.options.height+"px;cursor:move;position:absolute;";
+			this.content.cssText = "width:"+this.options.width+"px;height:"+this.options.height+"px;cursor:auto;position:absolute;";
 				this.bottomNav = document.createElement("DIV");
 				this.bottomNav.className = "bottomNav";
 				for(var i=1; i<= this.total; i++){
@@ -67,9 +67,7 @@
 				contentHolderUnit.className = "contentHolderUnit";
 				contentHolderUnit.setAttribute("ref", i);
 				contentHolderUnit.setAttribute("id", 'contentHolderUnit' + (i));
-				var unitItem = '<a href="'+this.data[item].url+'" target="_blank" class="elementLink">';
-				unitItem += '</a>';
-				unitItem += '<img src="'+this.data[item].img+'" alt="'+this.data[item].title+'"/>';
+				var unitItem = '<img src="'+this.data[item].img+'" alt="'+this.data[item].title+'"/>';
 				unitItem += '<span class="elementOverlay"></span>';
 				unitItem += '<span class="leftShadow"></span>';
 				unitItem += '<span class="rightShadow"></span>';
@@ -285,7 +283,7 @@
 		className : "posterTvGrid",//最外层样式
 		autoWidth : true,//默认不用设置宽
 		width : 970,//最外层宽，需要使用的时候在传,默认由程序自动判断
-		height : 310,//最外层高  
+		height : 310,//最外层高
 		delay : 5000,//滚动间隔（毫秒）
 		speed : 500 //滚动速度毫秒
 	};

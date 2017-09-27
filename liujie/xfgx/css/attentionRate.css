@@ -1,0 +1,34 @@
+/*attentionRate-homePage*/
+.attentionRate-homePage {
+    position: relative;
+    margin-top: 60px;
+    height: 260px;
+    background-image: url("../img/attentionRate/icon_bg8.png");
+    text-align: center;
+    /*border: 5px solid red;*/
+}
+
+.attentionRate-homePage p {
+    position: relative;
+    top: 100px;
+    z-index: 99;
+    font-size: 40px;
+    color: #ffffff;
+}
+
+/*attentionRate-idea*/
+.attentionRate-idea {
+    position: relative;
+    height: 700px;
+}
+
+.attentionRate-idea p {
+    position: relative;
+    font-size: 26px;
+    color: #3f3c39;
+    margin-top: 70px;
+}
+
+.attentionRate-idea img {
+    margin-top: 110px;
+}

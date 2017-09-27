@@ -1,0 +1,66 @@
+/*increaseScoresBy-homePage*/
+.increaseScoresBy-homePage {
+    position: relative;
+    margin-top: 60px;
+    height: 260px;
+    background-image: url("../img/increaseScoresBy/icon_bg7.png");
+    text-align: center;
+    /*border: 5px solid red;*/
+}
+
+.increaseScoresBy-homePage p {
+    z-index: 99;
+    position: relative;
+    top: 100px;
+    font-size: 36px;
+    color: #ffffff;
+}
+
+/*increaseScoresBy-idea*/
+.increaseScoresBy-idea {
+    position: relative;
+    height: 700px;
+    background-color: #ffffff;
+}
+
+.increaseScoresBy-idea .main-div >div  {
+    position: relative;
+    padding-top: 5px;
+
+}
+
+.increaseScoresBy-idea img {
+    position: relative;
+    display: inline-block;
+    top: -12px ;
+    margin-right: 90px;
+}
+
+.increaseScoresBy-idea .main-div >div:nth-child(2) img {
+    top: -38px !important;
+}
+
+.increaseScoresBy-idea p {
+    text-align: left;
+    font-size: 16px;
+    color: #525353;
+    line-height: 26px;
+    letter-spacing: 2px;
+}
+
+.increaseScoresBy-idea .main-div >div >div {
+    display: inline-block;
+    width: 450px;
+}
+
+.increaseScoresBy-idea .main-div >div >div p:first-child {
+    font-size: 26px;
+    color: #2b2724;
+    line-height: 20px;
+    letter-spacing: normal;
+}
+
+
+.increaseScoresBy-idea .main-div >div div {
+    margin-top: 20px;
+}

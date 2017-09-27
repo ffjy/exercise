@@ -1,0 +1,27 @@
+/*trainingCamp-provide*/
+.trainingCamp-provide {
+    height: 1790px;
+    margin-top: 60px;
+}
+
+.trainingCamp-provide >div {
+    padding-left: 20px;
+    margin: 0px auto;
+}
+
+/*leaveWord*/
+.leaveWord {
+    height: 200px;
+    text-align: center;
+}
+
+.leaveWord >div {
+    /*border: 2px solid red;*/
+    text-align: center;
+}
+
+.leaveWord table{
+
+    margin: 0px auto;
+    left: 0px !important;
+}

@@ -7,19 +7,26 @@
     <link rel="stylesheet" href="css/main.css">
     <script src="https://cdn.bootcss.com/jquery/1.12.0/jquery.min.js"></script>
     <script src="js/parallax.min.js"></script>
-    <script src="https://cdn.bootcss.com/lazysizes/4.0.0-rc3/lazysizes.min.js"></script>    
+    <script src="https://cdn.bootcss.com/lazysizes/4.0.0-rc3/lazysizes.min.js"></script>
+    <link rel="stylesheet" href="css/posterTvGrid.css">
 </head>
-<body style="margin: 0">
+<body style="margin: 0; z-index: 5">
 
     <header class="header-navigation web-width top" id="header">
         <div class="main-div main-top">
             <img class="lazyload" data-src="img/main/icon_xfgx.png" height="45" width="193"/>
             <ul>
-                <li>
-                    <a class="link" href="index.html" title="Home">首页</a>
+                <li class="link-li"  onclick="window.location.href='#';">
+                    <a class="link" href="#" title="Home">首页</a>
                 </li>
-                <li>
-                    <a class="link" href="#" title="About">关于我们</a>
+                <li class="link-li" onclick="window.location.href='#curriculumSystem';">
+                    <a class="link" href="#curriculumSystem" title="About">课程</a>
+                </li>
+                <li class="link-li" onclick="window.location.href='#xfTeacher';">
+                    <a class="link" href="#xfTeacher" title="About">师资</a>
+                </li>
+                <li class="link-li" onclick="window.location.href='#aboutXF';">
+                    <a class="link link-about" href="#aboutXF" title="About">关于小凡</a>
                 </li>
             </ul>
         </div>
@@ -27,21 +34,22 @@
 
 
     <div class="parallax-container web-width homePage" data-parallax="scroll"
-         data-image-src="img/main/icon_homePage.png"
-         naturalheight="765"
-         style="height: 765px !important; max-width: 1920px;margin-top: 70px !important;
-                  z-index: 1; margin-top:10px;">
+         data-image-src="img/main/banner.jpg"
+         naturalheight="580"
+         style="">
     </div>
 
 
-    <div class="web-width  web-secondView web-zIndex">
-        <div class="main-div main-secondView">
+    <div class="web-width  web-secondView">
+        <div onclick="window.location.href='trainingCamp.html';"
+             class="main-div main-secondView">
             <img data-src="img/main/icon_bg01.png" class="lazyload main-secondView-bg"/>
 
             <img data-src="img/main/icon_mouse.png"
                  class="lazyload secondView-mouse"/>
 
-            <img data-src="img/main/icon_signUp.png" class="lazyload secondView-signUp"/>
+            <img data-src="img/main/icon_signUp.png"
+                 class="lazyload secondView-signUp"/>
 
             <button class="btn">报名咨询</button>
         </div>
@@ -51,13 +59,21 @@
     <div class="web-width web-zIndex web-thirdView">
         <div class="main-div main-thirdView ">
             <div>
+                <div class="main-title">
+                    <img src="img/main/icon_line.png" class="line main-thirdView-firstline lazyload"/>
+
+                    <h1>为什么选择小凡</h1>
+
+                    <img src="img/main/icon_line.png" class="line main-thirdView-secondline lazyload"/>
+                </div>
+
                 <table>
                     <tr>
                         <td width="60">
                             <p class="text-broadwise text-index">01</p>
                         </td>
                         <td>
-                            <p class="thirdView-p">
+                            <p class="thirdView-p preamble">
                                 高考在即，还没有准备好的你，在学校吃力跟随大家的
                                 <small>学习进度</small>
                                 <br />
@@ -67,16 +83,16 @@
                     </tr>
                 </table>
 
-                <div class="main-position">
+                <div class="main-position main-third-position">
                     <div class="classroom">
-
+                        <div class="filter"></div>
                         <span class="introduction">
                             <p>
                                 小凡公学为你量身订制了 <br />
                                 全封闭式的学习环境
                             </p>
 
-                            <img data-src="img/main/icon_line.png"
+                            <img data-src="img/main/icon_line2.png"
                                  class="lazyload main-thirdView-line" />
 
                             <p class="secondP">
@@ -86,7 +102,9 @@
                             </p>
                         </span>
                     </div>
-                    <div class="introduction-small cf saithImg-div effect-bubba">
+
+                    <div onclick="window.location.href='environment.html';"
+                         class="introduction-small cf saithImg-div effect-bubba">
                         <figcaption>
                             <div class="display-div">
                                 <span>
@@ -95,9 +113,11 @@
                                     住宿学习
                                 </p>
                                 </span>
-                                <img data-src="img/main/icon_more.png" class="lazyload imgMore"/>
+                                <img data-src="img/main/icon_more.png" class="imgMore-first lazyload imgMore"/>
                             </div>
-                            <img data-src="img/main/icon_01.png" class="lazyload introduction-small-imgC introduction-small-img"/>
+
+                            <img data-src="img/main/icon_01.png" class="lazyload
+                            introduction-small-imgC introduction-small-img"/>
 
                             <div class="hidden-div main-thirdView-hiddenP">
                                 <span>
@@ -108,7 +128,7 @@
                                         我们不止重视学生每一次进步<br />
                                         更对高考成绩的提分负责
                                     </p>
-                                    <button class="btn-readMore">
+                                    <button class="btn-readMore main-thirdView-btn">
                                         查看更多
                                     </button>
                                 </span>
@@ -126,8 +146,8 @@
             <div>
                 <table>
                     <tr>
-                        <td width="750">
-                            <p class="fourthView-p">
+                        <td >
+                            <p class="fourthView-p preamble">
                                 考试的表现取决于你付出的程度，从学渣到学霸 <br />
                                 挑战的不是你的学校好坏，而是你 <small>够不够拼</small>
                             </p>
@@ -139,13 +159,15 @@
                 </table>
 
                 <div class="main-position">
+
                     <div class="main-fourthView-view">
+                        <div class="filter"></div>
                         <span class="introduction">
                             <p>
                                 小凡公学给你提供强大的助力
                             </p>
 
-                            <img data-src="img/main/icon_line.png"
+                            <img data-src="img/main/icon_line2.png"
                                  class="lazyload main-thirdView-line" />
 
                             <p class="secondP">
@@ -154,7 +176,9 @@
                             </p>
                         </span>
                     </div>
-                    <div class="introduction-dual-small  cf dualImg-div effect-bubba">
+
+                    <div onclick="window.location.href='increaseScoresBy.html';"
+                        class="introduction-dual-small  cf dualImg-div effect-bubba">
                         <figcaption>
                             <div  class="display-div">
                                 <span>
@@ -163,6 +187,7 @@
                                     拿最多的分
                                 </p>
                             </span>
+
                                 <img data-src="img/main/icon_more.png" class="lazyload imgMore"/>
                             </div>
 
@@ -175,7 +200,7 @@
                                         线上教学工具有效辅助线下教学<br />
                                         3+3课程体系全面提升高考总分
                                     </p>
-                                    <button class="btn-readMore">
+                                    <button class="btn-readMore main-secondView-btn">
                                         查看更多
                                     </button>
                                 </span>
@@ -197,7 +222,7 @@
                             <p class="text-broadwise text-index">03</p>
                         </td>
                         <td>
-                            <p class="thirdView-p">
+                            <p class="thirdView-p preamble">
                                 高考是一场充满热血与挫折的征途，每一天都是一场战役 <br />
                                 无论输赢，你都需要 <small>坚持、坚持、再坚持</small>
                             </p>
@@ -207,23 +232,25 @@
 
                 <div class="main-position">
                     <div class="main-fifthView-view">
-                    <span class="introduction">
-                        <p>
-                            无论是给你指路的老师<br />
-                            还是与你一同奋进的同学
-                        </p>
+                        <div class="filter"></div>
+                        <span class="introduction">
+                            <p>
+                                无论是给你指路的老师<br />
+                                还是与你一同奋进的同学
+                            </p>
 
-                        <img data-src="img/main/icon_line.png"
-                             class="lazyload main-thirdView-line" />
+                            <img data-src="img/main/icon_line2.png"
+                                 class="lazyload main-thirdView-line" />
 
-                        <p class="secondP">
-                            在小凡公学，我们陪你、教你、逼你、鼓励你<br />
-                            我们尊重且珍视你的梦想<br />
-                            坐你的追梦同路人
-                        </p>
-                    </span>
+                            <p class="secondP">
+                                在小凡公学，我们陪你、教你、逼你、鼓励你<br />
+                                我们尊重且珍视你的梦想<br />
+                                坐你的追梦同路人
+                            </p>
+                        </span>
                     </div>
-                    <div class="introduction-small  cf saithImg-div effect-bubba">
+
+                    <div onclick="window.location.href='attentionRate.html';"class="introduction-small introduction-small-third cf saithImg-div effect-bubba">
                         <figcaption>
                             <div  class="display-div">
                                 <span>
@@ -233,7 +260,7 @@
                                 </p>
                             </span>
 
-                                <img data-src="img/main/icon_more.png" class="lazyload imgMore"/>
+                                <img data-src="img/main/icon_more.png" class="lazyload imgMore imgMore-third"/>
                             </div>
 
                             <img data-src="img/main/icon_03.png" class="lazyload img-rocket introduction-small-img"/>
@@ -246,7 +273,7 @@
                                         关注每一个人的学习与生活<br />
                                         让孩子在小凡公学收到应有的尊重
                                     </p>
-                                    <button class="btn-readMore">
+                                    <button class="btn-readMore main-fifthView-btn">
                                         查看更多
                                     </button>
                                 </span>
@@ -266,7 +293,7 @@
                 <table>
                     <tr>
                         <td width="780">
-                            <p class="sixthView-p">
+                            <p class="sixthView-p preamble">
                                 谁的青春不留遗憾，转眼到高三<br />
                                 才发现大把的时间都已被用来挥霍，曾经的 <small>梦想</small>
                                 已然遥不可及
@@ -278,14 +305,16 @@
                     </tr>
                 </table>
 
-                <div class="main-position">
+                <div class="main-position main-sixthView-position">
                     <div class="main-sixthView-view">
-                        <span class="introduction">
+                        <div class="filter"></div>
+
+                        <span class="introduction main-sixthView-introduction">
                             <p>
                                 只要你还想就永远都来得及<br />
                             </p>
 
-                            <img data-src="img/main/icon_line.png"
+                            <img data-src="img/main/icon_line2.png"
                                  class="lazyload main-thirdView-line" />
 
                             <p class="secondP">
@@ -294,7 +323,8 @@
                             </p>
                         </span>
                     </div>
-                    <div class="introduction-dual-small  cf dualImg-div effect-bubba">
+                    <div
+                    onclick="window.location.href='superScholar.html';" class="introduction-dual-small cf dualImg-div effect-bubba">
                         <figcaption>
                             <div  class="display-div">
                                <span>
@@ -317,7 +347,7 @@
                                         发掘你的潜力<br />
                                         突破你的极限
                                     </p>
-                                    <button class="btn-readMore">
+                                    <button class="btn-readMore main-sixthView-btn">
                                         查看更多
                                     </button>
                                 </span>
@@ -326,6 +356,189 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+
+    <div class="curriculum web-zIndex web-width">
+        <a name="curriculumSystem" id="curriculumSystem"></a>
+
+        <div class="curriculum-div main-div">
+            <div class="main-title">
+                <img src="img/main/icon_line.png" class="line main-thirdView-firstline lazyload"/>
+
+                <h1>课程体系</h1>
+
+                <img src="img/main/icon_line.png" class="line main-thirdView-secondline lazyload"/>
+            </div>
+
+            <div class="curriculum-gradient">
+                <div></div>
+
+                <div class="curriculum-kc curriculum-kc-shuqi">
+                    <div>
+                        <img src="img/main/icon_course1.png" class="lazyload"/>
+                    </div>
+
+                    <p>新高三暑假衔接营<br /> <small>（第一轮总复习）</small></p>
+                </div>
+
+                <div class="curriculum-kc curriculum-kc-xuankao">
+                    <div>
+                        <img src="img/main/icon_course2.png" class="lazyload"/>
+                    </div>
+
+                    <p>选考冲刺营</p>
+                </div>
+
+                <div class="curriculum-kc curriculum-kc-hangjia">
+                    <div>
+                        <img src="img/main/icon_course3.png" class="lazyload"/>
+                    </div>
+
+                    <p>高考寒假集训营<br /> <small>（调整节奏，冲刺语数外）</small></p>
+                </div>
+
+                <div class="curriculum-kc curriculum-kc-gaokao">
+                    <div>
+                        <img src="img/main/icon_course4.png" class="lazyload"/>
+                    </div>
+
+                    <p>高考冲刺营</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="teacher web-width">
+        <a name="xfTeacher" id="xfTeacher"></a>
+
+        <div class="aboutUs-div main-div">
+            <div class="main-title">
+                <img src="img/main/icon_line.png" class="line main-thirdView-firstline lazyload"/>
+
+                <h1>小凡老师</h1>
+
+                <img src="img/main/icon_line.png" class="line lazyload
+                    main-thirdView-secondline "/>
+            </div>
+
+            <p class="teacher-leadin">只有优秀的老师 才能培养出优秀的学生</p>
+
+            <div class="teacher-img"></div>
+
+            <div class="teacher-summary">
+                <div class="teacher-background teacher-display">
+                    <div class="yuan">
+                        <img src="img/main/icon_beijing.png" height="40" width="40" class="lazyload"/>
+                    </div>
+
+                    <h2>优秀的教育背景</h2>
+                    <p>
+                        小凡公学的教师<br />
+                        毕业于没过名校或者国内85、<br />
+                        211等重点名校<br />
+                        智商、颜值都很高
+                    </p>
+                </div>
+
+                <div class="teacher-experience teacher-display">
+                    <div class="yuan">
+                        <img src="img/main/icon_jiaoxue.png" height="40" width="40" class="lazyload"/>
+                    </div>
+                    <div>
+                        <h2>丰富的教学经验</h2>
+                        <p>
+                            小凡的老师经过千锤百炼<br />
+                            只专注高考冲刺生的教学
+                        </p>
+                    </div>
+                </div>
+
+                <div class="teacher-team teacher-display">
+                    <div class="yuan">
+                        <img src="img/main/icon_tuandui.png" height="40" width="40" class="lazyload"/>
+                    </div>
+                    <h2>强大的教育团队</h2>
+                    <p>
+                        小凡的线下教研团队<br>
+                        拥有丰富的一线高考教材出版经验<br>
+                        书籍成功提分超万人<br />
+                        <br />
+                        小凡的线上教研团队<br />
+                        专注研发最适用于高三学生的线上辅助app<br />
+                        让每个小凡学子都享受个性化的学习
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="web-width  about">
+        <a name="aboutXF" id="aboutXF"></a>
+
+        <div class="main-div">
+            <div class="main-title">
+                <img src="img/main/icon_line.png" class="line main-thirdView-firstline lazyload"/>
+
+                <h1>关于小凡</h1>
+
+                <img src="img/main/icon_line.png" class="line main-thirdView-secondline lazyload"/>
+            </div>
+
+            <p class="about-leadin">
+                小凡公学，作为非凡教育的子牌子，致力于打造全国最优质的高中生全封闭式学习培训，<br />
+                传承非凡教育对高考十多年的教育与研究经验。<br />
+                小凡公学为广大考生提供高考前的临门一脚，通过短期集训的方式帮学子筑梦名校。
+            </p>
+
+            <h2 class="campus">- 校园风采 -</h2>
+            <div class="campus-img">
+                <div id="posterTvGrid" style="margin:40px auto 0 auto;"></div>
+                <div class="arrow">
+                    <div class="prev"><</div>
+                    <div class="next">></div>
+                </div>
+            </div>
+
+
+            <h2>- 联系方式 -</h2>
+            <div class="contactWay lazyload">
+
+            </div>
+
+            <h2>- 免费咨询 -</h2>
+
+            <table class="table-leaveWord">
+                <form  id="xfzxForm" action="">
+                    <tr >
+                        <th>姓名</th>
+                        <th>电话</th>
+                        <th>留言</th>
+                        <th rowspan=2 class="th-btn">
+                            <button id="submitBtn">立即咨询</button>
+                        </th>
+                    </tr>
+                    <tr >
+                        <td>
+                            <input type="text" name="user_name" required="required" placeholder="请输入你的姓名">
+                        </td>
+                        <td>
+                            <input type="text" name="user_telephone"
+                                   required="required" placeholder="请输入你的电话">
+                        </td>
+                        <td>
+                            <input type="text" name="user_leaveWord"
+                                    placeholder="请输入你的留言">
+                        </td>
+                    </tr>
+                </form>
+            </table>
+
+            <h2>"小凡公学客服人员会在24小时内联系您"</h2>
         </div>
     </div>
 
@@ -350,6 +563,43 @@
         </div>
     </div>
 
-    <script src="js/main.js"></script>
+
+    <!--<script src="js/main.js"></script>-->
+    <script type="text/javascript" src="js/posterTvGrid.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $('#submitBtn').click(function() {
+                var d = {};
+                var t = $('form').serializeArray();
+                $.each(t, function() {
+                    d[this.name] = this.value;
+                });
+
+                d.createtime = new Date();
+                d.id = null;
+                console.log(d)
+//                $('form').submit(d)
+            });
+        });
+
+        $(function(){
+            $(".link-li").click(function(){
+                $('.li-onClike').removeClass('li-onClike');
+                $('.link-onClike').removeClass('link-onClike');
+                $(this).addClass("li-onClike");
+                $(this).children('a').addClass("link-onClike");
+            });
+        });
+
+
+        var posterTvGrid = new posterTvGrid('posterTvGrid',{className: "posterTvGrid"},[
+                {"img":"img\/main\/icon_lunbo1.png","title":"","class":"lazyload"},
+                {"img":"img\/main\/icon_lunbo2.png","title":"","class":"lazyload"},
+                {"img":"img\/main\/icon_lunbo3.png","title":"","class":"lazyload"},
+                {"img":"img\/main\/icon_lunbo5.png","title":"","class":"lazyload"},
+                {"img":"img\/main\/icon_lunbo6.png","title":"","class":"lazyload"}
+            ]
+        );
+    </script>
 </body>
 </html>

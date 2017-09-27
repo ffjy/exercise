@@ -1,0 +1,182 @@
+
+/*environment-homePage*/
+.environment-homePage {
+    position: relative;
+    /*top: 60px;*/
+    margin-top: 60px;
+    height: 260px;
+    background-image: url("../img/environment/icon_bg6.png");
+    text-align: center;
+    /*border: 5px solid red;*/
+}
+
+.environment-homePage p {
+    z-index: 99;
+    position: relative;
+    top: 100px;
+    height: 260px;
+    font-size: 40px;
+    color: #ffffff;
+}
+
+/*environment-train*/
+.environment-train {
+    position: relative;
+    height: 220px;
+    background-color: #ffffff;
+}
+
+.environment-train >div {
+    /*border: 2px solid red;*/
+}
+
+.environment-train p:first-child {
+    position: relative;
+    top: 20px;
+    font-size: 26px;
+    color: #2b2724;
+}
+
+.environment-train p:first-child + p {
+    position: relative;
+    top: 25px;
+    line-height: 30px;
+    font-size: 16px;
+    color: #525353;
+}
+
+
+/*environment-flowPath*/
+.environment-flowPath {
+    /*position: relative;*/
+    height: 520px;
+    background-color: #f5f5f5;
+    /*border: 2px solid black;*/
+
+}
+
+.environment-flowPath >div {
+    /*border: 2px solid red;*/
+    background-image: url("../img/environment/icon_bg3.jpg");
+}
+
+
+/*environment-workAndRest*/
+.environment-workAndRest {
+    position: relative;
+    height: 380px;
+    color: #ffffff;
+}
+
+.environment-workAndRest >div {
+    background-image: url("../img/environment/icon_bg4.jpg");
+    /*border: 2px solid black;*/
+}
+
+/*environment-studying*/
+.environment-studying {
+    position: relative;
+    padding-top: 30px;
+    height: 320px;
+    background-color: #f5f5f5;
+}
+
+.environment-studying p {
+    font-size: 26px;
+    color: #3c3c3c;
+    text-align: center;
+}
+
+.environment-studying >.main-div p {
+    font-size: 18px;
+    margin-top: 50px;
+    text-align: center;
+    color: #3c3c3c;
+}
+
+.environment-studying >.main-div >div {
+    position: relative;
+}
+
+.environment-studying >.main-div >div >div {
+    position: relative;
+    display: inline-block;
+    height: 120px;
+    width: 120px;
+    margin: 30px 10px 0px 10px;
+    background-color: #ffffff;
+}
+
+.environment-studying >.main-div >div >div >div {
+    text-align: center;
+    position: relative;
+    top: 20px;
+    left: 40px;
+    width: 40px;
+    height: 40px;
+}
+
+.environment-studying-ceshi >div {
+    background-image: url("../img/environment/icon_chehsi2.png");
+}
+
+.environment-studying-jiangshou >div {
+    background-image: url("../img/environment/icon_jiangshou.png");
+}
+
+.environment-studying-ketang >div {
+    background-image: url("../img/environment/icon_ketang.png");
+}
+
+.environment-studying-chumen >div {
+    background-image: url("../img/environment/icon_chumen.png");
+}
+
+.environment-studying-kehou >div {
+    background-image: url("../img/environment/icon_kehou.png");
+}
+
+.environment-studying-chaxun >div {
+    background-image: url("../img/environment/icon_chaxun.png");
+}
+
+
+.environment-studying >.main-div >div >div p {
+    position: relative;
+    top: -10px;
+}
+
+.environment-studying >.main-div >div >div:hover {
+    background-color: #ffba01;
+}
+
+.environment-studying >.main-div >div >div:hover p {
+    color: #ffffff;
+}
+
+
+.environment-studying-ceshi:hover >div  {
+    background-image: url("../img/environment/icon_cheshi01.png");
+}
+
+.environment-studying-jiangshou:hover >div  {
+    background-image: url("../img/environment/icon_jiangshou2.png");
+}
+
+.environment-studying-ketang:hover >div  {
+    background-image: url("../img/environment/icon_ketang2.png");
+}
+
+.environment-studying-chumen:hover >div  {
+    background-image: url("../img/environment/icon_chumen2.png");
+}
+
+.environment-studying-kehou:hover >div  {
+    background-image: url("../img/environment/icon_kehou2.png");
+}
+
+.environment-studying-chaxun:hover >div  {
+    background-image: url("../img/environment/icon_chaxun.png");
+}
+
+
