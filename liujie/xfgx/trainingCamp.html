@@ -9,10 +9,12 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/trainingCamp.css">
     <link rel="stylesheet" href="css/posterTvGrid.css">
-    <link rel="shortcut icon" href="/img/logo.ico">
+    <link rel="shortcut icon" href="img/logo.ico">
     <script src="js/posterTvGrid.js"></script>
     <script src="https://cdn.bootcss.com/lazysizes/4.0.0-rc3/lazysizes.min.js"></script>
-
+    <link rel="stylesheet" href="css/alertify.core.css">
+    <link rel="stylesheet" href="css/alertify.default.css">
+    <script src="js/alertify.min.js"></script>
 </head>
 <body style="margin: 0; ">
 <header class="header-navigation web-width top" id="header">
@@ -44,8 +46,8 @@
 
 <div class="web-width leaveWord ">
     <div class="main-div">
+	<form>
         <table class="table-leaveWord">
-            <form action="">
                     <tr >
                         <th>姓名</th>
                         <th>电话</th>
@@ -67,9 +69,9 @@
                                     placeholder="请输入你的留言" data-label="留言">
                         </td>
                     </tr>
-            </form>
+           
         </table>
-
+	</form>
         <h2>"小凡公学客服人员会在24小时内联系您"</h2>
     </div>
 </div>
@@ -95,6 +97,7 @@
     </div>
 </div>
 
+<script src="js/main.js"></script>
 <script>
     $(function() {
         $('#submitBtn').click(function(e) {
