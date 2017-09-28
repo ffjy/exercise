@@ -212,7 +212,7 @@ p {
 }
 
 .saithImg-div{
-    transition: .6s transform;
+    transition: 1s transform;
 }
 
 .saithImg-div:hover  {
@@ -222,7 +222,7 @@ p {
 }
 
 .dualImg-div{
-    transition: .5s transform;
+    transition: 1s transform;
 }
 
 .dualImg-div:hover  {
@@ -348,6 +348,7 @@ p {
 
 
 .btn-readMore {
+    height: 33px;
     display: inline-block;
     background-color: #201001;
     color: #ffd416;
@@ -365,9 +366,9 @@ p {
     -moz-border-radius: 30px;
     border-radius: 30px;
 
-    -webkit-box-shadow: 1px 1px 1px rgba(0,0,0, .29), inset 1px 1px 1px rgba(255,255,255, .44);
-    -moz-box-shadow: 1px 1px 1px rgba(0,0,0, .29), inset 1px 1px 1px rgba(255,255,255, .44);
-    box-shadow: 1px 1px 1px rgba(0,0,0, .29), inset 1px 1px 1px rgba(255,255,255, .44);
+    /*-webkit-box-shadow: 1px 1px 1px rgba(0,0,0, .29), inset 1px 1px 1px rgba(255,255,255, .44);*/
+    /*-moz-box-shadow: 1px 1px 1px rgba(0,0,0, .29), inset 1px 1px 1px rgba(255,255,255, .44);*/
+    /*box-shadow: 1px 1px 1px rgba(0,0,0, .29), inset 1px 1px 1px rgba(255,255,255, .44);*/
 
     -webkit-transition: all 0.15s ease;
     -moz-transition: all 0.15s ease;
@@ -545,7 +546,8 @@ p {
     right: 100px;
     border-radius: 10px;
     border: none;
-    background-color: #ffce4b;
+    font-size: 26px;
+    background-color: #ffd416;
 }
 
 .web-secondView span {
@@ -1179,7 +1181,7 @@ p {
 
 .teacher-display:hover {
     transition: 1s;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.15), 0 3px 10px rgba(0,0,0,0.15);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.25);
 }
 
 .teacher-display:hover >.yuan {
@@ -1340,6 +1342,7 @@ p {
 }
 
 .table-leaveWord + h2 {
+    margin: 55px;
     font-size: 22px !important;
     color: #2b2724 !important;
 }
@@ -1389,4 +1392,15 @@ p {
     width: 400px;
     top: 90px;
     left: 640px;
+}
+
+.copr {
+    position: absolute;
+    width: 400px;
+    font-size: 16px;
+    line-height: 30px;
+    color: #636666;
+    margin: 0;
+    top: 120px;
+    left: 650px;
 }
