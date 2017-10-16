@@ -1,14 +1,14 @@
-/*increaseScoresBy-homePage*/
-.increaseScoresBy-homePage {
+/*isb-homePage*/
+.isb-homePage {
     position: relative;
     margin-top: 60px;
     height: 260px;
-    background-image: url("../img/increaseScoresBy/icon_bg7.png");
+    background-image: url("../img/increaseScoresBy/increaseScoresBy_bg04.png");
     text-align: center;
     /*border: 5px solid red;*/
 }
 
-.increaseScoresBy-homePage p {
+.isb-homePage p {
     z-index: 99;
     position: relative;
     top: 100px;
@@ -16,51 +16,43 @@
     color: #ffffff;
 }
 
-/*increaseScoresBy-idea*/
-.increaseScoresBy-idea {
+/*isb-public*/
+.isb-public {
+    min-width: 1200px !important;
     position: relative;
-    height: 700px;
+}
+
+.isb-public >div {
+    position: relative;
+    margin: 0px auto;
+    height: 100%;
+    width: 1280px;
+    min-width: 1280px;
+}
+
+
+/*isb-curriculum*/
+.isb-curriculum {
+    height: 566px;
     background-color: #ffffff;
 }
 
-.increaseScoresBy-idea .main-div >div  {
-    position: relative;
-    padding-top: 5px;
-
+/*isb-teachingModel*/
+.isb-teachingModel {
+    height: 462px;
+    background-color: #f5f5f5;
 }
 
-.increaseScoresBy-idea img {
-    position: relative;
-    display: inline-block;
-    top: -12px ;
-    margin-right: 90px;
+.isb-teachingModel >div:first-child {
+    position: absolute;
+    width: 100%;
+    height: 83px;
+    background-color: #ffffff;
+    top: 0;
 }
 
-.increaseScoresBy-idea .main-div >div:nth-child(2) img {
-    top: -38px !important;
-}
-
-.increaseScoresBy-idea p {
-    text-align: left;
-    font-size: 16px;
-    color: #525353;
-    line-height: 26px;
-    letter-spacing: 2px;
-}
-
-.increaseScoresBy-idea .main-div >div >div {
-    display: inline-block;
-    width: 450px;
-}
-
-.increaseScoresBy-idea .main-div >div >div p:first-child {
-    font-size: 26px;
-    color: #2b2724;
-    line-height: 20px;
-    letter-spacing: normal;
-}
-
-
-.increaseScoresBy-idea .main-div >div div {
-    margin-top: 20px;
+/*isb-teach*/
+.isb-teach {
+    height: 721px;
+    background-color: #ffffff;
 }

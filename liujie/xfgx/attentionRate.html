@@ -8,28 +8,34 @@
     <script src="js/parallax.min.js"></script>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/attentionRate.css">
-    <link rel="stylesheet" href="css/posterTvGrid.css">
     <link rel="shortcut icon" href="img/logo.ico">
-    <script src="js/posterTvGrid.js"></script>
+    <link rel="stylesheet" href="css/alertify.core.css">
+    <link rel="stylesheet" href="css/alertify.default.css">
+    <script src="js/alertify.min.js"></script>
     <script src="https://cdn.bootcss.com/lazysizes/4.0.0-rc3/lazysizes.min.js"></script>
 
 </head>
 <body style="margin: 0; ">
 <header class="header-navigation web-width top" id="header">
     <div class="main-div main-top">
-        <img class="lazyload" data-src=="img/main/icon_xfgx.png" height="45" width="193"/>
+        <img src="img/main/icon_xfgx.png" height="45" width="193"/>
+
         <ul>
-            <li class="link-li"  onclick="window.location.href='index.html#';">
-                <a class="link" href="#" title="Home">首页</a>
+            <li class="link-li" onclick="history.go(-1)">
+                <!--onclick="window.location.href='index.html#';">-->
+                <a class="link" href="/" title="首页">首页</a>
             </li>
             <li class="link-li" onclick="window.location.href='index.html#curriculumSystem';">
-                <a class="link" href="#curriculumSystem" title="About">课程</a>
+                <a class="link" href="#curriculumSystem" title="课程">课程</a>
             </li>
             <li class="link-li" onclick="window.location.href='index.html#xfTeacher';">
-                <a class="link" href="#xfTeacher" title="About">师资</a>
+                <a class="link" href="#xfTeacher" title="师资">师资</a>
+            </li>
+            <li class="link-li" onclick="window.location.href='../index.html#publicPraise';">
+                <a class="link" href="#publicPraise" title="口碑">口碑</a>
             </li>
             <li class="link-li" onclick="window.location.href='index.html#aboutXF';">
-                <a class="link link-about" href="#aboutXF" title="About">关于小凡</a>
+                <a class="link link-about" href="#aboutXF" title="关于小凡">关于小凡</a>
             </li>
         </ul>
     </div>
@@ -37,20 +43,65 @@
 
 
     <div class="attentionRate-homePage web-width">
-        <div class="filter"></div>
+        <!--<div class="filter"></div>-->
         <p>
             比传统学校高300%+的关注度
         </p>
     </div>
 
-    <div class="attentionRate-idea web-width">
-        <div class="main-div">
-            <p>
-                小凡公学一直以“陪你、教你、逼你、鼓励你”的教学理念<br />
-                从学习层面、行为层面、心理层面全方位关注每一位学生
-            </p>
+    <div class="attentionRate-idea web-width attentionRate-public">
+        <div >
+            <img src="img/attentionRate/attentionRate_bg02.png"
+                 height="402" width="1280" class="lazyload"/>
+        </div>
+    </div>
 
-            <img src="img/attentionRate/icon_zunz.png" height="312" width="382" class="lazyload"/>
+    <div class="attentionRate-study web-width attentionRate-public">
+        <div >
+            <img src="img/attentionRate/attentionRate_bg03.png" height="264" width="1280" class="lazyload"/>
+        </div>
+    </div>
+
+    <div class="attentionRate-behaviour web-width attentionRate-public">
+        <div >
+            <img src="img/attentionRate/attentionRate_bg04.png" height="284" width="1280"  class="lazyload"/>
+        </div>
+    </div>
+
+    <div class="attentionRate-mentality web-width attentionRate-public">
+        <div >
+            <img src="img/attentionRate/attentionRate_bg05.png" height="352" width="1280" class="lazyload"/>
+        </div>
+    </div>
+
+    <div class="web-width web-dock" id="dock">
+        <div></div>
+        <div class="main-div main-dock">
+            <form id="ar_dock_Form">
+                <p>
+                        <span>
+                            联系电话: <br />
+                            <small>400-050-9886</small>
+                        </span>
+
+                    <span>
+                            免费领取 价值688元 课程礼包
+                        </span>
+
+                    <span>
+                            <input type="text" name="user_name" required="required"
+                                   placeholder="请输入你的姓名" data-label="姓名">
+
+
+                            <input type="text" name="user_telephone" required="required"
+                                   placeholder="请输入你的电话" data-label="电话">
+                        </span>
+
+                    <span>
+                            <button id="ar_dock_Btn" class="submitBtn main-dock-submitBtn">立即预约</button>
+                        </span>
+                </p>
+            </form>
         </div>
     </div>
 
@@ -62,9 +113,9 @@
                     </span>
                 <span class="main-addresslist">
                         <p>
-                            <strong>银湖校区</strong>  杭州市富阳区银湖街道金子垄5号 <br />
-                            <strong>象山校区</strong>  杭州市西湖区转塘镇美院南山路象山国际1号楼 10F <br />
-                            <strong>昌岗校区</strong>  广州市海珠区昌岗东路252号江南坊五楼（广州美院正对面）
+                            <strong>银湖校区</strong>  杭州市富阳区银湖街道金子垄5号<br />
+                            <strong>富春硅谷校区</strong>  杭州市富阳九龙大道富春硅谷<br />
+                            <strong>象山校区</strong>  杭州市西湖区转塘镇美院南山路象山国际1号楼 10F
                         </p>
                     </span>
                 <span class="telephone">
@@ -75,5 +126,30 @@
     </div>
 
     <script src="js/main.js"></script>
+    <script>
+        //Consultation column
+        window.onload = function () {
+            var docuFunction = dock;
+            docuFunction(0,915);
+        };
+
+        //给positon：fiexd布局对象根据scrollLeft设定left
+        window.onscroll = function () {
+            var idList = new Array();
+            var onscroll = windowOnscroll;
+            onscroll(idList);
+        };
+
+
+        //Consultation button trigger
+        $(function() {
+
+            $('#ar_dock_Btn').click(function(e) {
+                e.preventDefault();
+                sumbitMonth('ar_dock_Form');
+                return false;
+            });
+        });
+    </script>
 </body>
 </html>

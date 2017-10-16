@@ -22,7 +22,7 @@ app.post('/leaveWord', function(req, res) {
 		if (err) { console.log(err.message);}
 		// return res.send(msg);
 	})
-	res.send('留言成功，谢谢🙏');
+	res.send('预约成功，谢谢🙏');
 });
 
 app.listen(8888, function() { console.log('server start') });

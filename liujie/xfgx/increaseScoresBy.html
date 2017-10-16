@@ -8,114 +8,139 @@
     <script src="js/parallax.min.js"></script>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/increaseScoresBy.css">
-    <link rel="stylesheet" href="css/posterTvGrid.css">
     <link rel="shortcut icon" href="img/logo.ico">
-    <script src="js/posterTvGrid.js"></script>
+    <link rel="stylesheet" href="css/alertify.core.css">
+    <link rel="stylesheet" href="css/alertify.default.css">
+    <script src="js/alertify.min.js"></script>
     <script src="https://cdn.bootcss.com/lazysizes/4.0.0-rc3/lazysizes.min.js"></script>
 
 </head>
 <body style="margin: 0; ">
-<header class="header-navigation web-width top" id="header">
-    <div class="main-div main-top">
-        <img src="img/main/icon_xfgx.png" height="45" width="193"/>
-        <ul>
-            <li class="link-li"  onclick="window.location.href='index.html#';">
-                <a class="link" href="#" title="Home">首页</a>
-            </li>
-            <li class="link-li" onclick="window.location.href='index.html#curriculumSystem';">
-                <a class="link" href="#curriculumSystem" title="About">课程</a>
-            </li>
-            <li class="link-li" onclick="window.location.href='index.html#xfTeacher';">
-                <a class="link" href="#xfTeacher" title="About">师资</a>
-            </li>
-            <li class="link-li" onclick="window.location.href='index.html#aboutXF';">
-                <a class="link link-about" href="#aboutXF" title="About">关于小凡</a>
-            </li>
-        </ul>
+    <header class="header-navigation web-width top" id="header">
+        <div class="main-div main-top">
+            <img src="img/main/icon_xfgx.png" height="45" width="193"/>
+            <ul>
+                <li class="link-li"  onclick="history.go(-1)">
+                    <!--onclick="window.location.href='index.html#';">-->
+                    <a class="link" href="/" title="首页">首页</a>
+                </li>
+                <li class="link-li" onclick="window.location.href='index.html#curriculumSystem';">
+                    <a class="link" href="#curriculumSystem" title="课程">课程</a>
+                </li>
+                <li class="link-li" onclick="window.location.href='index.html#xfTeacher';">
+                    <a class="link" href="#xfTeacher" title="师资">师资</a>
+                </li>
+                <li class="link-li" onclick="window.location.href='../index.html#publicPraise';">
+                    <a class="link" href="#publicPraise" title="口碑">口碑</a>
+                </li>
+                <li class="link-li" onclick="window.location.href='index.html#aboutXF';">
+                    <a class="link link-about" href="#aboutXF" title="关于小凡">关于小凡</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+
+    <div class="isb-homePage web-width">
+        <p>
+            用最短的时间拿最多的分
+        </p>
     </div>
-</header>
 
-
-<div class="increaseScoresBy-homePage web-width">
-    <div class="filter"></div>
-    <p>
-        用最短的时间拿最多的分
-    </p>
-</div>
-
-<div class="increaseScoresBy-idea web-width">
-    <div class="main-div">
+    <div class="isb-curriculum web-width isb-public">
         <div>
-            <img class="lazyload" src="img/increaseScoresBy/icon_r1.png" height="130" width="130"/>
-
-            <div>
-                <p>
-                    优质的师资团队，科学课程体系
-                </p>
-                <p>
-                    千万重金打造，拥有多年高考教学经验的全职师资团队<br />
-                    3+3课程体系针对性攻破高考最易失分的20%考点<br />
-                    个性化小班教学，有的放矢<br />
-                    全面提升高考总分
-                </p>
-            </div>
-        </div>
-
-        <div>
-            <img class="lazyload" src="img/increaseScoresBy/icon_r2.png" height="130" width="130"/>
-
-            <div>
-                <p>
-                    线上线下有机结合
-                </p>
-                <p>
-                    小凡公学采用自主研发的线上教学辅助工具<br />
-                    对学生进行每日过关练习<br />
-                    并搭配线上即时辅导<br />
-                    老师一周七天、一天24小时全天候答疑<br />
-                    线上线下教学完美结合，把渗透式教学做到极致
-                </p>
-            </div>
-        </div>
-
-        <div>
-            <img class="lazyload" src="img/increaseScoresBy/icon_3.png" height="130" width="130"/>
-
-            <div>
-                <p>
-                    一站式升学服务
-                </p>
-                <p>
-                    100%有效提分使我们对教学质量的自信<br />
-                    零退班是我们对教学服务的保证<br />
-                    一站式高考志愿专业咨询<br />
-                    圆每一个孩子的升学梦
-                </p>
-            </div>
+            <img src="img/increaseScoresBy/increaseScoresBy_bg01.png"/>
         </div>
     </div>
-</div>
 
-<div class="web-width web-zIndex web-bottom">
-    <div class="main-div main-bottom">
+    <div class="isb-teachingModel web-width isb-public">
+        <div></div>
         <div>
-                    <span class="main-address">
-                        <strong>联系地址：</strong>
-                    </span>
-            <span class="main-addresslist">
-                        <p>
-                            <strong>银湖校区</strong>  杭州市富阳区银湖街道金子垄5号 <br />
-                            <strong>象山校区</strong>  杭州市西湖区转塘镇美院南山路象山国际1号楼 10F <br />
-                            <strong>昌岗校区</strong>  广州市海珠区昌岗东路252号江南坊五楼（广州美院正对面）
-                        </p>
-                    </span>
-            <span class="telephone">
-                        联系电话   400-050-9886
-                    </span>
+            <img src="img/increaseScoresBy/increaseScoresBy_bg02.png"/>
         </div>
     </div>
-</div>
 
-<script src="js/main.js"></script>
+    <div class="isb-teach web-width isb-public">
+        <div>
+            <img src="img/increaseScoresBy/increaseScoresBy_bg03.png"/>
+        </div>
+    </div>
+
+    <div class="web-width web-dock" id="dock">
+        <div></div>
+        <div class="main-div main-dock">
+            <form id="isb_dock_Form">
+                <p>
+                    <span>
+                        联系电话: <br />
+                        <small>400-050-9886</small>
+                    </span>
+
+                    <span>
+                        免费领取 价值688元 课程礼包
+                    </span>
+
+                    <span>
+                        <input type="text" name="user_name" required="required"
+                               placeholder="请输入你的姓名" data-label="姓名">
+
+
+                        <input type="text" name="user_telephone" required="required"
+                               placeholder="请输入你的电话" data-label="电话">
+                    </span>
+
+                    <span>
+                        <button id="isb_dock_Btn" class="submitBtn main-dock-submitBtn">立即预约</button>
+                    </span>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <div class="web-width web-zIndex web-bottom">
+        <div class="main-div main-bottom">
+            <div>
+                        <span class="main-address">
+                            <strong>联系地址：</strong>
+                        </span>
+                <span class="main-addresslist">
+                            <p>
+                                <strong>银湖校区</strong>  杭州市富阳区银湖街道金子垄5号 <br />
+                                <strong>象山校区</strong>  杭州市西湖区转塘镇美院南山路象山国际1号楼 10F <br />
+                                <strong>昌岗校区</strong>  广州市海珠区昌岗东路252号江南坊五楼（广州美院正对面）
+                            </p>
+                        </span>
+                <span class="telephone">
+                            联系电话   400-050-9886
+                        </span>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script>
+        //Consultation column
+        window.onload = function () {
+            var docuFunction = dock;
+            docuFunction(-1,1400);
+        };
+
+        //给positon：fiexd布局对象根据scrollLeft设定left
+        window.onscroll = function () {
+            var idList = new Array();
+            var onscroll = windowOnscroll;
+            onscroll(idList);
+        };
+
+
+        //Consultation button trigger
+        $(function() {
+            $('#isb_dock_Btn').click(function(e) {
+                e.preventDefault();
+                sumbitMonth('isb_dock_Form');
+                return false;
+            });
+        });
+    </script>
 </body>
 </html>

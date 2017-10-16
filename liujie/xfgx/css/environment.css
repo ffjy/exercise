@@ -5,6 +5,7 @@
     /*top: 60px;*/
     margin-top: 60px;
     height: 260px;
+    min-width: 1280px;
     background-image: url("../img/environment/icon_bg6.png");
     text-align: center;
     /*border: 5px solid red;*/
@@ -22,27 +23,18 @@
 /*environment-train*/
 .environment-train {
     position: relative;
-    height: 220px;
+    height: 452px;
     background-color: #ffffff;
 }
 
 .environment-train >div {
+    position: relative;
+    height: 452px;
+    width: 1280px;
+    min-width: 1280px;
+    margin: 0px auto;
+    background-image: url("../img/environment/environment_bg01.png");
     /*border: 2px solid red;*/
-}
-
-.environment-train p:first-child {
-    position: relative;
-    top: 20px;
-    font-size: 26px;
-    color: #2b2724;
-}
-
-.environment-train p:first-child + p {
-    position: relative;
-    top: 25px;
-    line-height: 30px;
-    font-size: 16px;
-    color: #525353;
 }
 
 
@@ -50,14 +42,20 @@
 .environment-flowPath {
     /*position: relative;*/
     height: 520px;
-    background-color: #f5f5f5;
-    /*border: 2px solid black;*/
+    min-width: 1280px;
+    background-image: url("../img/environment/environment_bg02.png");
 
 }
 
 .environment-flowPath >div {
+    position: relative;
+    height: 310px;
+    width: 1280px;
+    min-width: 1280px;
+    top: 115px;
+    margin: 0px auto;
+    text-align: center;
     /*border: 2px solid red;*/
-    background-image: url("../img/environment/icon_bg3.jpg");
 }
 
 
@@ -65,11 +63,17 @@
 .environment-workAndRest {
     position: relative;
     height: 380px;
+    min-width: 1280px;
     color: #ffffff;
 }
 
 .environment-workAndRest >div {
-    background-image: url("../img/environment/icon_bg4.jpg");
+    position: relative;
+    height: 414px;
+    width: 1280px;
+    min-width: 1280px;
+    margin: 0px auto;
+    background-image: url("../img/environment/environment_bg03.jpg");
     /*border: 2px solid black;*/
 }
 
@@ -78,12 +82,15 @@
     position: relative;
     padding-top: 30px;
     height: 320px;
+    min-width: 1200px;
     background-color: #f5f5f5;
 }
 
 .environment-studying p {
-    font-size: 26px;
-    color: #3c3c3c;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 20px!important;
+    color: #0b0400;
     text-align: center;
 }
 
@@ -116,25 +123,37 @@
     height: 40px;
 }
 
+.environment-studying-ceshi {}
+
 .environment-studying-ceshi >div {
     background-image: url("../img/environment/icon_chehsi2.png");
 }
+
+.environment-studying-jiangshou {}
 
 .environment-studying-jiangshou >div {
     background-image: url("../img/environment/icon_jiangshou.png");
 }
 
+.environment-studying-ketang {}
+
 .environment-studying-ketang >div {
     background-image: url("../img/environment/icon_ketang.png");
 }
+
+.environment-studying-chumen {}
 
 .environment-studying-chumen >div {
     background-image: url("../img/environment/icon_chumen.png");
 }
 
+.environment-studying-kehou {}
+
 .environment-studying-kehou >div {
     background-image: url("../img/environment/icon_kehou.png");
 }
+
+.environment-studying-chaxun {}
 
 .environment-studying-chaxun >div {
     background-image: url("../img/environment/icon_chaxun.png");
@@ -147,36 +166,7 @@
 }
 
 .environment-studying >.main-div >div >div:hover {
-    background-color: #ffba01;
-}
-
-.environment-studying >.main-div >div >div:hover p {
-    color: #ffffff;
-}
-
-
-.environment-studying-ceshi:hover >div  {
-    background-image: url("../img/environment/icon_cheshi01.png");
-}
-
-.environment-studying-jiangshou:hover >div  {
-    background-image: url("../img/environment/icon_jiangshou2.png");
-}
-
-.environment-studying-ketang:hover >div  {
-    background-image: url("../img/environment/icon_ketang2.png");
-}
-
-.environment-studying-chumen:hover >div  {
-    background-image: url("../img/environment/icon_chumen2.png");
-}
-
-.environment-studying-kehou:hover >div  {
-    background-image: url("../img/environment/icon_kehou2.png");
-}
-
-.environment-studying-chaxun:hover >div  {
-    background-image: url("../img/environment/icon_chaxun.png");
+    background-color: #ffe400;
 }
 
 
