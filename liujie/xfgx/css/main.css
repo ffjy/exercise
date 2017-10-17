@@ -1314,7 +1314,6 @@ input::-webkit-contacts-auto-fill-button {
     -o-transition: all .8s;
     -ms-transition: all .8s;
     transition: all .8s;
-
 }
 
 .web-dock >div:first-child {
@@ -1452,4 +1451,14 @@ input::-webkit-contacts-auto-fill-button {
     width: 400px;
     top: 90px;
     left: 640px;
+}
+
+.copr {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 400px;
+    font-size: 22px;
+    top: 130px;
+    left: 700px;
 }
