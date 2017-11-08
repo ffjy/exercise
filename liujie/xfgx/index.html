@@ -341,10 +341,11 @@
 
 
     <div class="curriculum web-zIndex web-width">
-        <a name="curriculumSystem" id="curriculumSystem"></a>
+        <a  class="anchor" name="curriculumSystem" id="curriculumSystem"></a>
 
         <div class="curriculum-div main-div">
             <div class="main-title">
+
                 <img src="img/main/icon_line.png" class="line main-thirdView-firstline lazyload"/>
 
                 <h1>课程体系</h1>
@@ -353,7 +354,9 @@
             </div>
 
             <div class="curriculum-gradient">
-                <div class="curriculum-kc curriculum-kc-shuqi">
+
+
+                <div class="curriculum-kc curriculum-kc-shuqi" onclick="window.location.href='curriculum.html#summerHolidays';">
                     <div>
                         <img src="img/main/icon_course1.png" class="lazyload"/>
                     </div>
@@ -361,7 +364,7 @@
                     <p>新高三暑假衔接营</p>
                 </div>
 
-                <div class="curriculum-kc curriculum-kc-xuankao">
+                <div class="curriculum-kc curriculum-kc-xuankao" onclick="window.location.href='curriculum.html#autumn';">
                     <div>
                         <img src="img/main/icon_course2.png" class="lazyload"/>
                     </div>
@@ -369,7 +372,7 @@
                     <p>秋季选考冲刺营</p>
                 </div>
 
-                <div class="curriculum-kc curriculum-kc-hangjia">
+                <div class="curriculum-kc curriculum-kc-hangjia" onclick="window.location.href='curriculum.html#winterVacation';">
                     <div>
                         <img src="img/main/icon_course3.png" class="lazyload"/>
                     </div>
@@ -377,7 +380,7 @@
                     <p>高考寒假集训营<br /> <small>（调整节奏，冲刺语数外）</small></p>
                 </div>
 
-                <div class="curriculum-kc curriculum-kc-gaokao">
+                <div class="curriculum-kc curriculum-kc-gaokao" onclick="window.location.href='curriculum.html#spring-gaokao';">
                     <div>
                         <img src="img/main/icon_course4.png" class="lazyload"/>
                     </div>
@@ -390,7 +393,7 @@
 
 
     <div class="teacher web-width web-zIndex">
-        <a name="xfTeacher" id="xfTeacher"></a>
+        <a class="anchor" name="xfTeacher" id="xfTeacher"></a>
 
         <div class="aboutUs-div main-div">
             <div class="main-title">
@@ -460,7 +463,7 @@
 
 
     <div class="web-width web-zIndex publicPraise">
-        <a name="publicPraise" id="publicPraise"></a>
+        <a class="anchor" name="publicPraise" id="publicPraise"></a>
 
         <div class="main-title">
             <img src="img/main/icon_line.png" class="line main-thirdView-firstline lazyload"/>
@@ -476,7 +479,7 @@
 
 
     <div class="web-width about web-zIndex">
-        <a name="aboutXF" id="aboutXF"></a>
+        <a class="anchor" name="aboutXF" id="aboutXF"></a>
 
         <div class="main-div">
             <div class="main-title">
@@ -620,22 +623,37 @@
     <div class="web-width web-zIndex web-bottom">
         <div class="main-div main-bottom">
             <div>
-                <span class="main-address">
-                    <strong>联系地址：</strong>
-                </span>
-                <span class="main-addresslist">
+                <div class="main-address">
                     <p>
-                        <strong>银湖校区</strong>  杭州市富阳区银湖街道金子垄5号<br />
-                        <strong>富春硅谷校区</strong>  杭州市富阳九龙大道富春硅谷<br />
-                        <strong>象山校区</strong>  杭州市西湖区转塘镇美院南山路象山国际1号楼 10F
+                        <i class="iconAddress"></i>
+                        联系地址: <span class="underline">硅谷校区</span>&nbsp;&nbsp;杭州市富阳九龙大道富春硅谷园区4号楼
+                        <span class="verticalLine">|</span>
+                        <span class="underline">银湖校区</span>&nbsp;&nbsp;杭州市富阳区银湖街道金子垄5号
+                        <span class="verticalLine">|</span>
+                        <span class="underline">象山校区</span>&nbsp;&nbsp;杭州市西湖区转塘镇美院南山路象山国际1号楼10F
                     </p>
-                </span>
-                <span class="telephone">
-                    联系电话   400-050-9886
-                </span>
-                <p class="copr">
-                    杭州小凡教育科技有限公司 版权所有
-                </p>
+                </div>
+
+                <div class="telephone">
+                    <p><i class="iconTelePhone"></i>联系电话：400-050-9886</p>
+                </div>
+                
+                <div class="QRCode">
+                    <div class="QRCode-img">
+                        <img src="img/QRCode.jpg"/>
+                    </div>
+
+                    <div class="QRCode-str">
+                        <p>小凡公学公众号</p>
+                    </div>
+                </div>
+                <div class="copr">
+                    <p>
+                        浙ICP备12001281号
+                        <span class="verticalLine">|</span>
+                        杭州小凡教育科技有限公司&nbsp;&nbsp;&nbsp;版权所有</p>
+
+                </div>
             </div>
         </div>
     </div>
@@ -730,8 +748,19 @@
 
         //Consultation column
         window.onload = function () {
+            //右侧导航栏对应目标高度
+            var heightList = [0,3539,4057,5177,5912];
+            //需要改变样式的元素和样式名
+            var cartesProperties = [{
+                objetStr: ".link-li",
+                className: 'li-onClike'
+            },{
+                objetStr: ".link-li a",
+                className: 'link-onClike'
+            }];
+
             var docuFunction = dock;
-            docuFunction(500,7100);
+            docuFunction(500,7100,heightList,cartesProperties);
         };
 
         //给positon：fiexd布局对象根据scrollLeft设定left
@@ -973,7 +1002,6 @@
                             obj.style['filter'] = 'alpha(opacity='+ leader +')';
                         }else if(k == 'zIndex'){
                             obj.style['zIndex'] = json[k];
-                            console.log(666);
                         }else{
                             obj.style[k] = leader + "px";
                         }

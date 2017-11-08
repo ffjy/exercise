@@ -5,67 +5,75 @@
     <title>小凡公学</title>
 
     <script src="https://cdn.bootcss.com/jquery/1.12.0/jquery.min.js"></script>
-    <script src="../js/parallax.min.js"></script>
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/trainingCamp.css">
-    <link rel="shortcut icon" href="../img/logo.ico">
+    <script src="js/parallax.min.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/curriculum.css">
+    <link rel="shortcut icon" href="img/logo.ico">
+    <link rel="stylesheet" href="css/alertify.core.css">
+    <link rel="stylesheet" href="css/alertify.default.css">
+    <script src="js/alertify.min.js"></script>
     <script src="https://cdn.bootcss.com/lazysizes/4.0.0-rc3/lazysizes.min.js"></script>
-    <link rel="stylesheet" href="../css/alertify.core.css">
-    <link rel="stylesheet" href="../css/alertify.default.css">
-    <script src="../js/alertify.min.js"></script>
+
 </head>
 <body style="margin: 0; ">
 <header class="header-navigation web-width top" id="header">
     <div class="main-div main-top">
-        <img src="../img/main/icon_xfgx.png" height="45" width="193"/>
+        <img src="img/main/icon_xfgx.png" height="45" width="193"/>
         <ul>
             <li class="link-li"  onclick="history.go(-1)">
-                <!--onclick="window.location.href='../index.html#';">-->
+                <!--onclick="window.location.href='index.html#';">-->
                 <a class="link" href="/" title="首页">首页</a>
             </li>
-            <li class="link-li" onclick="window.location.href='../index.html#curriculumSystem';">
+            <li class="link-li" onclick="window.location.href='index.html#curriculumSystem';">
                 <a class="link" href="#curriculumSystem" title="课程">课程</a>
             </li>
-            <li class="link-li" onclick="window.location.href='../index.html#xfTeacher';">
+            <li class="link-li" onclick="window.location.href='index.html#xfTeacher';">
                 <a class="link" href="#xfTeacher" title="师资">师资</a>
             </li>
             <li class="link-li" onclick="window.location.href='../index.html#publicPraise';">
                 <a class="link" href="#publicPraise" title="口碑">口碑</a>
             </li>
-            <li class="link-li" onclick="window.location.href='../index.html#aboutXF';">
+            <li class="link-li" onclick="window.location.href='index.html#aboutXF';">
                 <a class="link link-about" href="#aboutXF" title="关于小凡">关于小凡</a>
             </li>
         </ul>
     </div>
 </header>
 
-<div class="sc-kecheng web-width" >
-    <div class="main-div">
-        <img class="lazyload" src="../img/trainingCamp/sc_bg01.jpg" height="468" width="1200"/>
-    </div>
+<div class="curriculum-summerHolidays web-width">
+    <a  class="anchor" name="summerHolidays" id="summerHolidays"></a>
+
+    <div class="div-secondFloor"></div>
 </div>
 
-<div class="sc-introduce web-width" >
-    <div class="main-div">
-        <img class="lazyload" src="../img/trainingCamp/sc_bg02.jpg" height="165" width="1200"/>
-    </div>
+<div class="curriculum-autumn web-width">
+    <a class="anchor" name="autumn" id="autumn"></a>
+
+    <div class="div-secondFloor"></div>
 </div>
 
-<div class="sc-objective web-width" >
-    <div class="main-div">
-        <img class="lazyload" src="../img/trainingCamp/sc_bg03.jpg" height="248" width="1200"/>
-    </div>
+<div class="curriculum-winterVacation web-width">
+    <a class="anchor" name="winterVacation" id="winterVacation"></a>
+    <div class="div-secondFloor"></div>
 </div>
 
-<div class="sc-content web-width" >
-    <div class="main-div">
-        <img class="lazyload" src="../img/trainingCamp/sc_bg04.jpg" height="894" width="1200"/>
-    </div>
+<div class="curriculum-spring web-width">
+    <a class="anchor" name="spring" id="spring"></a>
+
+    <div class="div-secondFloor"></div>
+</div>
+
+<div class="curriculum-spring-gaokao web-width">
+    <a class="anchor" name="spring-gaokao" id="spring-gaokao"></a>
+
+    <div class="div-secondFloor"></div>
 </div>
 
 <div class="web-width leaveWord ">
+    <a class="anchor" name="leaveWord" id="leaveWord"></a>
+
     <div class="main-div">
-        <form id="sc_form">
+        <form id="cu_dock_form">
             <table class="table-leaveWord">
                 <tr>
                     <th>
@@ -83,7 +91,7 @@
 
                     </th>
                     <th class="th-btn">
-                        <button id="sc_submitBtn" class="submitBtn">立即咨询</button>
+                        <button id="cu_dock_btn" class="submitBtn">立即咨询</button>
                     </th>
                 </tr>
 
@@ -96,18 +104,18 @@
 <div class="web-width web-dock" id="dock">
     <div></div>
     <div class="main-div main-dock">
-        <form id="sc_dock_form">
+        <form id="isb_dock_Form">
             <p>
-                <span>
-                    联系电话: <br />
-                    <small>400-050-9886</small>
-                </span>
+                    <span>
+                        联系电话: <br />
+                        <small>400-050-9886</small>
+                    </span>
 
                 <span>
                         免费领取 价值688元 课程礼包
-                </span>
+                    </span>
 
-                     <span>
+                <span>
                         <input type="text" name="user_name" required="required"
                                placeholder="请输入你的姓名" data-label="姓名">
 
@@ -116,8 +124,8 @@
                                placeholder="请输入你的电话" data-label="电话">
                     </span>
 
-                    <span>
-                        <button id="sc_dock_btn" class="submitBtn main-dock-submitBtn">立即预约</button>
+                <span>
+                        <button id="isb_dock_Btn" class="submitBtn main-dock-submitBtn">立即预约</button>
                     </span>
             </p>
         </form>
@@ -144,7 +152,7 @@
 
             <div class="QRCode">
                 <div class="QRCode-img">
-                    <img src="../img/QRCode.jpg" alt="">
+                    <img src="img/QRCode.jpg"/>
                 </div>
 
                 <div class="QRCode-str">
@@ -162,14 +170,39 @@
     </div>
 </div>
 
+<div class="navigation-right">
+        <ul>
+            <li onclick="window.location.href='#summerHolidays';"><p>暑假衔接营</p></li>
+            <li onclick="window.location.href='#autumn';"><p>秋季选考</p></li>
+            <li onclick="window.location.href='#winterVacation';"><p>寒假集训营</p></li>
+            <li onclick="window.location.href='#spring';"><p>春季选考</p></li>
+            <li onclick="window.location.href='#spring-gaokao';"><p>春季高考</p></li>
+            <li onclick="window.location.href='#leaveWord';"><p>报名咨询</p></li>
+        </ul>
+</div>
 
-<script src="../js/main.js"></script>
-<script type="text/javascript">
+<script src="js/main.js"></script>
+<script>
+    $(function(){
+        $(".navigation-right ul li").click(function(){
+            $('.navigation-onClike').removeClass('navigation-onClike');
+            $(this).addClass("navigation-onClike");
+        });
+    });
 
     //Consultation column
     window.onload = function () {
+        //右侧导航栏对应目标高度
+        var heightList = [0,732,1770,2855,3948,4728];
+        //需要改变样式的元素和样式名
+        //objetStr：目标元素
+        //className: 添加的样式名
+        var cartesProperties = [{
+            objetStr: ".navigation-right ul li",
+            className: 'navigation-onClike'
+        }];
         var docuFunction = dock;
-        docuFunction(-1,1100);
+        docuFunction(-1,4700,heightList,cartesProperties);
     };
 
     //给positon：fiexd布局对象根据scrollLeft设定left
@@ -179,17 +212,18 @@
         onscroll(idList);
     };
 
-    $(function() {
 
-        $('#sc_submitBtn').click(function(e) {
+    //Consultation button trigger
+    $(function() {
+        $('#cu_dock_btn').click(function(e) {
             e.preventDefault();
-            sumbitMonth('sc_form');
+            sumbitMonth('cu_dock_form');
             return false;
         });
 
-        $('#sc_dock_btn').click(function(e) {
+        $('#isb_dock_Btn').click(function(e) {
             e.preventDefault();
-            sumbitMonth('sc_dock_form');
+            sumbitMonth('isb_dock_Form');
             return false;
         });
     });

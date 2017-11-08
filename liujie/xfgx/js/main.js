@@ -1,12 +1,14 @@
- function dock(minHeight,maxHeight) {
+
+function dock(minHeight,maxHeight,heightList,cartesProperties) {
     var new_scroll_position = 0;
     var last_scroll_position;
     var dock = document.getElementById("dock");
 
     window.addEventListener('scroll', function(e) {
         last_scroll_position = window.scrollY;
-        console.log(window.scrollY)
+        // console.log(window.scrollY)
 
+        //底部预约栏根据网页高度而变换是否显示
         if ( maxHeight > last_scroll_position && last_scroll_position > minHeight ) {
             dock.classList.remove("web-dock-hidden");
             dock.classList.add("web-dock-visible");
@@ -15,9 +17,45 @@
             dock.classList.add("web-dock-hidden");
         }
 
+        if(heightList) {
+            updateCartesClass(heightList, cartesProperties);
+        }
+
         new_scroll_position = last_scroll_position;
     });
 
+    /**
+     * 根据高度修改菜单栏目标样式，即当前在界面在哪个模块，菜单就给那个模块的li添加样式
+     * @param heightList 各个菜单指向的高度集合
+     * @param cartesProperties 要修改的目标元素和对应样式Class
+     */
+    function updateCartesClass(heightList,cartesProperties) {
+        heightList.forEach(function (h,index) {
+            var maxInde = heightList.length;
+            var nextH = h+1000;
+
+            if(index < maxInde-1) {
+                nextH = heightList[index+1];
+            }
+
+            if(h <= last_scroll_position && last_scroll_position < nextH) {
+                updateCarte(cartesProperties,index)
+            }
+        })
+    }
+
+    /**
+     * 修改元素样式
+     * @param cartes 目标元素
+     * @param index 添加的样式名
+     */
+    function updateCarte(cartes,index) {
+        cartes.forEach(function (e) {
+            $("."+e.className).removeClass(e.className);
+
+            $(e.objetStr).eq(index).addClass(e.className);
+        })
+    }
 
     $(function(){
         $(".link-li").click(function(){
@@ -59,7 +97,7 @@ function windowOnscroll(ids) {
          return false;
      }
 
-     $.post('http://118.31.16.134:8888/leaveWord', d, function(data) {
+     $.post('http://118.31.16.134/leaveWord', d, function(data) {
          alertify.alert(data);
      });
  };

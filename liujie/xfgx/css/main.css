@@ -28,6 +28,13 @@ input::-webkit-contacts-auto-fill-button {
     right: 0;
 }
 
+.anchor {
+    display: block;
+    position: relative;
+    top: -92px;
+    visibility: hidden;
+}
+
 .line {
     position: absolute;
     margin-top: 13px !important;
@@ -125,7 +132,7 @@ input::-webkit-contacts-auto-fill-button {
 
 .main-top ul {
     position: absolute;
-    width: 550px;
+    width: 500px;
     height: 60px;
     text-align: center;
     right: 0px;
@@ -151,6 +158,7 @@ input::-webkit-contacts-auto-fill-button {
     float: left;
     font-size: 20px;
     padding-bottom: 0px;
+    transition: .3s;
 }
 
 .main-top ul li a {
@@ -163,6 +171,7 @@ input::-webkit-contacts-auto-fill-button {
     position: relative;
     margin: 25px;
     text-decoration: none;
+    transition: .3s;
 }
 
 .link-about {
@@ -170,20 +179,16 @@ input::-webkit-contacts-auto-fill-button {
     margin: 25px 0px;
 }
 
-.main-top li:hover {
-    background-color: #2b2724;
-}
-
-.main-top li:hover .link{
-    color: #ffe400;
-}
-
+.main-top li:hover,
 .li-onClike {
     background-color: #2b2724 !important;
+    transition: .6s;
 }
 
+.main-top li:hover .link,
 .link-onClike {
     color: #ffe400 !important;
+    transition: .6s;
 }
 
 /*homePage*/
@@ -549,8 +554,9 @@ input::-webkit-contacts-auto-fill-button {
 .accordion {
     height:380px;
     width: 1200px;
-    margin:0px auto;
+    margin: 0 auto;
     padding: 0;
+    box-sizing: border-box;
     position:relative;
 }
 
@@ -561,7 +567,6 @@ input::-webkit-contacts-auto-fill-button {
     width: 1240px;
     height:300px;
     top: -73px;
-    left: -40px;
     text-align: center;
 
 }
@@ -581,8 +586,8 @@ input::-webkit-contacts-auto-fill-button {
 }
 
 .imgTop {
-    position: relative;
-    top: -20px;
+    position: absolute;
+    top: 0;
     text-align: center;
     height: 300px;
 }
@@ -625,15 +630,13 @@ input::-webkit-contacts-auto-fill-button {
     height: 100%;
     display: block;
     text-align: center;
-    /*border: 1px solid red;*/
 }
 
 .accordion-img {
     position: absolute;
     margin: 0;
     padding: 0;
-    /*display: inline-block;*/
-    left: 0px;
+    left: 0;
     top: 0;
 
     -webkit-transition: all 0.5s ease-in-out;
@@ -1412,7 +1415,7 @@ input::-webkit-contacts-auto-fill-button {
     position: relative;
     margin: 0 ;
     background-color: #282828;
-    height: 250px;
+    height: 320px;
     bottom: 0px;
 }
 
@@ -1422,43 +1425,93 @@ input::-webkit-contacts-auto-fill-button {
     color: #636666;
 }
 
+.main-bottom >div {
+    width: 100%;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+
 .main-address {
-    position: absolute;
-    font-size: 22px;
-    width: 150px;
-    top: 90px;
-    left: 0px;
-    color: #636666;
+    position: relative;
+    font-size: 15px;
+    text-align: center;
+    margin: 0 auto;
 }
 
-.main-addresslist {
-    position: absolute;
-    top: 70px;
-    left: 170px;
-    font-size: 16px;
-    line-height: 30px;
-    color: #636666;
+.verticalLine {
+    position: relative;
+    margin: 0 15px;
 }
 
-.main-addresslist p {
-    text-align: left;
+.underline {
+    text-decoration: underline;
+}
+
+.iconAddress {
+    position: absolute;
+    width: 18px;
+    height: 19px;
+    left: -15px;
+    background-image: url("../img/main/address/icon_address.png");
+    background-size: 100% 100%;
 }
 
 .telephone {
-    position: absolute;
-    color: #636666;
-    font-size: 22px;
-    width: 400px;
-    top: 90px;
-    left: 640px;
+    font-size: 17px;
+    width: 100%;
+    text-align: center;
+    margin: 12px auto;
 }
 
-.copr {
+.iconTelePhone {
     position: absolute;
-    margin: 0;
-    padding: 0;
-    width: 400px;
-    font-size: 22px;
-    top: 130px;
-    left: 700px;
+    width: 18px;
+    height: 19px;
+    left: 480px;
+    background-image: url("../img/main/address/icon_telephone.png");
+    background-size: 100% 100%;
 }
+
+.QRCode {
+    width: 100%;
+    height: 125px;
+}
+
+.QRCode >div {
+    width: 100px;
+    margin: 0 auto;
+}
+
+.QRCode-img {
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.QRCode-img img {
+    width: 100%;
+    height: 100px;
+}
+
+.QRCode-str {
+    font-size: 14px;
+}
+
+
+.copr {
+    width: 100%;
+    color: #636666;
+    font-size: 13px;
+    margin-top: 22px;
+}
+
+.beiAn {
+    width: 50%;
+    border-right: 2px solid #636666;
+}
+
+.banQuan {
+    width: 50%;
+}
+
+
+
