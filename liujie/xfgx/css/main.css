@@ -668,6 +668,14 @@ input::-webkit-contacts-auto-fill-button {
     background-color: #ffe400;
 }
 
+.btn-bgColor-two {
+    background-color: #BEEF45!important;
+}
+
+.btn-bgColor-three {
+    background-color: #FFB010!important;
+}
+
 .btn:hover {
     cursor: pointer;
     transition: .5s;
