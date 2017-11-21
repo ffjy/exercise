@@ -12,13 +12,12 @@
     <link href="https://cdn.bootcss.com/normalize/7.0.0/normalize.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <script src="https://cdn.bootcss.com/lazysizes/4.0.0-rc3/lazysizes.min.js"></script>
-    <script src="js/parallax.min.js"></script>
+    <script src="js/parallax.min.js" async></script>
     <link rel="shortcut icon" href="img/logo.ico">
     <link rel="stylesheet" href="css/alertify.core.css">
     <link rel="stylesheet" href="css/alertify.default.css">
     <script src="js/alertify.min.js"></script>
     <link rel="stylesheet" href="css/demo.css">
-    <link rel="stylesheet" href="css/normalize.css">
     <script src="js/jquery.rotate.min.js"></script>
 </head>
 <body style="margin: 0; z-index: 5">
@@ -47,7 +46,7 @@
             </ul>
         </div>
     </header>
-
+    <img src="img/main/banner.jpg" alt="hidden banner img" style="display: none;">
     <div class="parallax-container web-width homePage"
          data-parallax="scroll"
          data-image-src="img/main/banner.jpg"
@@ -1021,13 +1020,6 @@
             };
 
             //获取属性值
-            function getStyle(obj, attr){
-                if(obj.currentStyle){
-                    return obj.currentStyle[attr];
-                }else{
-                    return window.getComputedStyle(obj, null)[attr];
-                };
-            };
             function getStyle(obj, attr){
                 if(obj.currentStyle){
                     return obj.currentStyle[attr];
